@@ -3,18 +3,82 @@
 // ========================================
 
 .scs-container		{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 2rem 0;
 	text-align: center;
-	
+	@include mqm(large)	{
+		display: grid;
+		//grid-template-columns: repeat(10, 1fr);
+		grid-template-areas:
+			". . header header header header header header . ."
+			". main main main main main main-logo main-logo . ."
+			". . footer-logo footer-logo footer footer footer footer footer ." ;
+		align-items: start;
+	}
 }
 
-article				{
-	
+.scs-item		{
+	article			{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		border: none;
+		border-radius: 1rem;
+		box-shadow:  0 3px 35px rgba($black, .1);
+		margin: 2rem 0;
+	}
 	@include mqm(small)	{
-		min-width: 40ch;
-		max-width: 60ch;
+		p 					{
+			min-width: 40ch;
+			max-width: 60ch;
+		}
+	}
+}
+
+.scion			{
+	grid-area: header;
+	article			{
+		background-color: lighten($color-pri, 20%);
+	}
+}
+
+.treehouse		{
+	grid-area: main;
+	article			{
+		background-color: lighten($marketing, 10%);
+	}
+}
+
+.logo1			{
+	grid-area: main-logo;
+	img 			{
+		width: 100%;
+		@include mqm(large)	{
+			width: 80%;
+			margin: 3rem 0 0 3rem;
+		}
+	}
+}
+
+.logo2			{
+	grid-area: footer-logo;
+	img 			{
+		width: 45%;
+		border-radius: 50%;
+		@include mqm(large)	{
+			width: 65%;
+			margin: 3rem 3rem 0 0;
+		}
+	}
+}
+
+.netmatters		{
+	grid-area: footer;
+	article			{
+		background-color: lighten($news, 15%);
 	}
 }

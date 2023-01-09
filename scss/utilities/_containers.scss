@@ -40,12 +40,12 @@ footer 				{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	min-height: 76dvh;
+	min-height: 78dvh;
 }
 
 .footer 			{
 	position: sticky;
 	bottom: 1rem;
 	text-align: center;
-	padding: 2rem 1rem;
+	padding: 2rem 0 0.5rem;
 }

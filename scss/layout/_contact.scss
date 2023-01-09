@@ -16,8 +16,14 @@
 	}
 	@include mqm(medium)	{
 		display: grid;
-		grid-template-columns: 2fr 5fr;
-		gap: 3rem;
+		grid-template-columns: 3fr 4fr;
+		gap: 2rem;
+	}
+	@include mqm(large)		{
+		grid-template-columns: 1fr 1fr;
+	}
+	@include mqm(x-large)		{
+		grid-template-columns: 2fr 3fr;
 	}
 }
 
@@ -25,7 +31,7 @@
 	padding-bottom: 2rem;
 	.tel				{
 		position: relative;
-		@include fancy-line(-.1rem);
+		@include fancy-line(0rem);
 		@include fancy-text(1.5rem);
 	}
 	.email				{
@@ -33,8 +39,4 @@
 		@include fancy-line(-.1rem);
 		@include fancy-text(1.125rem);
 	}
-}
-
-.contact-form	{
-	
 }

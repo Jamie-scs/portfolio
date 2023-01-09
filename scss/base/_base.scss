@@ -19,8 +19,20 @@ ul {
 	padding: 0;
 }
 
+.small				{
+	@include mqm(small)	{
+		display: none;
+	}
+}
+
 .medium				{
 	@include mqm(medium)	{
+		display: none;
+	}
+}
+
+.full 				{
+	@include mqx(small)	{
 		display: none;
 	}
 }

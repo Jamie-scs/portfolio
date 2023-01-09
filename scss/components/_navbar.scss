@@ -21,14 +21,14 @@
 	&:focus         {
 		font-size: 5.2rem;
 		-webkit-text-fill-color: lighten($color-pri, 10%);
-		padding: 0.7rem 0;
+		padding: 0.8595rem 0;
 		text-shadow: 0 0 0.5rem $color-pri;
 	}
 }
 
 .links				{
 	text-align: center;
-	padding: 5rem 0 1rem;
+	padding: 2rem 0 1rem;
 	>:last-child		{
 		@include b-sec(top,bottom);
 	}
@@ -59,5 +59,20 @@
 		font-size: 1.5rem;
 		padding: 0.5rem;
 		@include fancy-icon(1.8rem);
+	}
+}
+
+.stack				{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: $sidebar;
+	margin-top: 5rem;
+}
+
+.stack-icn			{
+	padding: 2rem;
+	img			{
+		width: 5rem;
 	}
 }

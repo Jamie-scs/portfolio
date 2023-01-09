@@ -11,6 +11,9 @@
 .overlay-h1	h1		{
 	text-align: center;
 	text-shadow: -0.3rem 0.3rem 1rem $color-pri;
+	-webkit-text-fill-color: rgba($white, 0.9);
+	-webkit-text-stroke-width: 0.05rem;
+	-webkit-text-stroke-color: $color-pri;
 	font-size: clamp(2.4rem, 5.5vw, 4rem);
 	margin: 0;
 }
@@ -55,12 +58,12 @@
 		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
 	}
 	a.tel 					{
-		font-size: clamp(1rem, 2.1vw, 1.5rem);
+		font-size: clamp(1rem, 2vw, 1.4rem);
 		font-style: normal;
 		font-weight: 600;
 	}
 	a.email 					{
-		font-size: clamp(0.85rem, 1.7vw, 1.125rem);
+		font-size: clamp(0.85rem, 1.6vw, 1.075rem);
 		font-style: normal;
 		font-weight: 600;
 	}
@@ -70,28 +73,38 @@
 
 .about-header		{
 	text-align: center;
-	margin-top: 2rem;
+	margin: 1rem 0;
 	h2 					{
 		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
 		@include mqm(large)	{
-			margin-top: 0;
+			margin: 0;
 		}
 	}
 }
 
-.about-text			{
-	p 					{
-		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
-		text-align: justify;
-		@include mqm(small)	{
-			text-align: center;
-		}
-		@include mqm(large)	{
-			text-align: justify;
-		}
-		@include mqm(x-large)	{
-			text-align: center;
-		}
+.about-text p		{
+	font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+	text-align: justify;
+}
+
+.about-content li 					{
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 0 1rem;
+	&.html				{
+		text-shadow: 0 0 0.5rem $html;
+	}
+	&.css				{
+		text-shadow: 0 0 0.5rem $css;
+	}
+	&.sass				{
+		text-shadow: 0 0 0.5rem $sass;
+	}
+	&.git				{
+		text-shadow: 0 0 0.5rem $git;
+	}
+	&.bash				{
+		text-shadow: 0 0 0.5rem $bash;
 	}
 }
 
@@ -111,19 +124,27 @@
 .scs-container		{
 	h2 					{
 		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
-		margin: 1rem 0;
+		margin: 0 0 0.5rem;
 	}
-	h3 				{
+	h3 					{
 		font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+		margin: 0;
 	}
-	h4				{
+	h4					{
 		font-size: clamp(1rem, 2vw, 1.325rem);
+		margin: 0;
 	}
 	em 					{
 		font-size: inherit;
+		margin: 0 0 0.5rem;
 	}
 	p 					{
-		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+		font-size: clamp(0.8rem, 1.4vw, 1.125rem);
 		text-align: justify;
+		margin: 0;
+	}
+	li 					{
+		font-size: clamp(0.8rem, 1.4vw, 1.125rem);
+		margin: 0;
 	}
 }

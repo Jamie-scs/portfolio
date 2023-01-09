@@ -1,1 +1,1020 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}* input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-moz-box-sizing:border-box;box-sizing:border-box;font-size:1em}html{height:100%}@font-face{font-family:"icomoon";src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"),url("../fonts/icomoon.woff") format("woff"),url("../fonts/icomoon.ttf") format("truetype"),url("../fonts/icomoon.svg#icomoon") format("svg");font-weight:normal;font-style:normal}body{font-family:Poppins, sans-serif;letter-spacing:.4px;min-height:100%}a{text-decoration:none;color:#000}ul{list-style-type:none;margin:0;padding:0}@media screen and (min-width: 48rem){.medium{display:none}}.hidden{display:none;visibility:hidden}.overlay{color:#fff}.overlay-h1 h1{text-align:center;text-shadow:-0.3rem 0.3rem 1rem #0652ff;font-size:clamp(2.4rem, 5.5vw, 4rem);margin:0}.overlay-p p{text-align:center;text-shadow:-0.3rem 0.3rem 1rem #0652ff;font-size:clamp(1.25rem, 2.9vw, 2rem);font-weight:400;margin:0}.scroll{text-align:center}.scroll small{font-size:0.875rem;color:#fff}.item-text h3{font-size:clamp(1rem, 2.1vw, 1.5rem);margin:0}.item-text a{font-size:clamp(0.65rem, 1.7vw, 0.925rem);color:#000}.contact-info h2{font-size:clamp(1.325rem, 2.4vw, 1.925rem);margin-top:0}.contact-info p{font-size:clamp(0.85rem, 1.9vw, 1.125rem)}.contact-info a.tel{font-size:clamp(1rem, 2.1vw, 1.5rem);font-style:normal;font-weight:600}.contact-info a.email{font-size:clamp(0.85rem, 1.7vw, 1.125rem);font-style:normal;font-weight:600}.about-header{text-align:center;margin-top:2rem}.about-header h2{font-size:clamp(1.325rem, 2.4vw, 1.925rem)}@media screen and (min-width: 62rem){.about-header h2{margin-top:0}}.about-text p{font-size:clamp(0.85rem, 1.9vw, 1.125rem);text-align:justify}@media screen and (min-width: 35rem){.about-text p{text-align:center}}@media screen and (min-width: 62rem){.about-text p{text-align:justify}}@media screen and (min-width: 75rem){.about-text p{text-align:center}}.coming-soon{text-align:center}.coming-soon h2{font-weight:900;text-transform:capitalize;font-size:clamp(3rem, 7vw, 7rem)}.scs-container h2{font-size:clamp(1.325rem, 2.4vw, 1.925rem);margin:1rem 0}.scs-container h3{font-size:clamp(1.125rem, 2.2vw, 1.625rem)}.scs-container h4{font-size:clamp(1rem, 2vw, 1.325rem)}.scs-container em{font-size:inherit}.scs-container p{font-size:clamp(0.85rem, 1.9vw, 1.125rem);text-align:justify}.hero picture>img{width:100%;height:100vh;object-fit:none}@media screen and (min-width: 62rem){.hero picture>img{max-height:67.5rem}}.item-img img{width:100%}.avatar picture img{width:100%;height:auto;border-radius:50%}[data-icon]:before{font-family:"icomoon";content:attr(data-icon);speak:none;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}.scroll span{color:#fff}@media screen and (min-width: 62rem){.form-group{display:grid;grid-template-columns:1fr 1fr;gap:1rem}}.form-control{width:100%;height:2.5rem;background-color:#ddd;padding-left:1rem;border:none;border-radius:0.35rem;margin:0 0 1rem;position:relative;top:0;transition:500ms ease}.form-control:hover,.form-control:focus{top:-.25rem;transition:500ms ease;box-shadow:0 3px 35px rgba(0,0,0,0.1)}.form-control:hover,.form-control:focus,.form-control:active{border:1px solid #0652ff;background-color:#fff}.form-control[name="message"]{height:10rem}.menu{position:absolute;top:1rem;left:1rem;width:4rem;height:4rem;display:flex;justify-content:center;align-items:center;background-color:#0652ff;opacity:0.7;border-radius:0.5rem;z-index:2}.menu:hover,.menu:focus{opacity:1}@media screen and (min-width: 62rem){.menu{display:none}}.menu-btn{text-align:center;font-size:2rem;background:transparent;border:none}.btn{width:40%;font-size:.825rem;font-weight:600;background-color:#0652ff;padding:0.75rem 3rem;border:none;border-radius:0.5rem}.btn:hover,.btn:focus{text-decoration:none;background-color:#0040d2}@media screen and (min-width: 48rem){.btn{width:55%;border-radius:0.75rem}}@media screen and (min-width: 75rem){.btn{width:35%;border-radius:0.75rem}}.logo-container{display:flex;justify-content:center;width:100%;border-bottom:4px solid #0652ff;border-:4px solid #0652ff}.logo{font-size:5rem;font-weight:900;color:#0652ff;-webkit-text-fill-color:#0652ff;-webkit-text-stroke-width:2px;-webkit-text-stroke-color:black;padding:1rem 0}.logo:hover,.logo:focus{font-size:5.2rem;-webkit-text-fill-color:#3975ff;padding:0.7rem 0;text-shadow:0 0 0.5rem #0652ff}.links{text-align:center;padding:5rem 0 1rem}.links>:last-child{border-top:2px solid #0652ff;border-bottom:2px solid #0652ff}.links li{margin:1rem 0}.links li:nth-child(-n+4)>a{position:relative}.links li:nth-child(-n+4)>a::after{content:"";position:absolute;left:0;bottom:-.375rem;width:100%;height:2px;background-color:#0652ff;transform:scaleX(0);transform-origin:right;transition:transform 250ms ease-in-out}.links li:nth-child(-n+4)>a:hover::after,.links li:nth-child(-n+4)>a:focus::after{transform:scaleX(1);transform-origin:left}.links a{font-size:.925rem;font-weight:400;line-height:2rem;transition:color 250ms ease-in 150ms;transition:font-weight 50ms ease-out 50ms;transition:font-size 50ms ease-out 50ms}.links a:hover,.links a:focus{color:#0652ff;font-size:1rem;font-weight:800}.social{display:flex;justify-content:space-between;margin:0 1.3rem}.social-icn{text-align:center}.social-icn a{font-size:1.5rem;padding:0.5rem;transition:color 250ms ease-in 150ms;transition:font-size 50ms ease-out 50ms}.social-icn a:hover,.social-icn a:focus{color:#0652ff;font-size:1.8rem}.hero{position:relative}.overlay-container{width:100%;height:100%;position:absolute;bottom:0;z-index:1}.overlay{height:100%}.overlay-h1{position:relative;top:0;height:50%;display:flex;justify-content:center;align-items:flex-end}.overlay-content{position:absolute;bottom:0;display:flex;flex-direction:column;justify-content:space-between;width:100%;height:50%;z-index:2}.overlay-p{margin:0}.scroll{padding-bottom:1rem}.portfolio-container{padding:1rem 0 0}@media screen and (min-width: 48rem){.portfolio-container{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3, 1fr);gap:1rem}}@media screen and (min-width: 62rem){.portfolio-container{grid-template-columns:repeat(3, 1fr);grid-template-rows:1fr 1fr;gap:1rem;padding:2rem 0 2rem}}.item{display:flex;flex-direction:column;background:linear-gradient(0deg, #0652ff, transparent 18%, #fff 100%);border-radius:0 0 0.4rem 0.4rem;position:relative;top:0;transition:500ms ease}.item:hover,.item:focus{top:-1rem;transition:500ms ease;box-shadow:0 3px 35px rgba(0,0,0,0.1)}.item-img::before{content:"";position:absolute;bottom:-20%;left:-90%;width:150%;height:4rem;z-index:1;background-color:#fff;opacity:0.2;transform:rotate(45deg);transition:all 350ms ease-in}.item:hover .item-img::before,.item:focus .item-img::before{bottom:100%;left:40%}@media screen and (max-width: 47.9375rem){.item{margin-bottom:1.5rem}}.item-img{position:relative;overflow:hidden;border-radius:0.4rem 0.4rem 0 0}.item-text{padding:0 0.5rem 0.5rem}@media screen and (max-width: 47.9375rem){.item-text{display:flex;justify-content:space-between;align-items:center;height:3rem;padding-top:0.5rem}}.contact-container{display:flex;flex-direction:column;background:#ccc;padding:2rem;border-radius:1rem}@media screen and (max-width: 47.9375rem){.contact-container{text-align:center}}@media screen and (min-width: 35rem){.contact-container{margin:2rem 0 0}}@media screen and (min-width: 48rem){.contact-container{display:grid;grid-template-columns:2fr 5fr;gap:3rem}}.contact-info{padding-bottom:2rem}.contact-info .tel{position:relative;transition:color 250ms ease-in 150ms;transition:font-weight 50ms ease-out 50ms;transition:font-size 50ms ease-out 50ms}.contact-info .tel::after{content:"";position:absolute;left:0;bottom:-.1rem;width:100%;height:2px;background-color:#0652ff;transform:scaleX(0);transform-origin:right;transition:transform 250ms ease-in-out}.contact-info .tel:hover::after,.contact-info .tel:focus::after{transform:scaleX(1);transform-origin:left}.contact-info .tel:hover,.contact-info .tel:focus{color:#0652ff;font-size:1.5rem;font-weight:800}.contact-info .email{position:relative;transition:color 250ms ease-in 150ms;transition:font-weight 50ms ease-out 50ms;transition:font-size 50ms ease-out 50ms}.contact-info .email::after{content:"";position:absolute;left:0;bottom:-.1rem;width:100%;height:2px;background-color:#0652ff;transform:scaleX(0);transform-origin:right;transition:transform 250ms ease-in-out}.contact-info .email:hover::after,.contact-info .email:focus::after{transform:scaleX(1);transform-origin:left}.contact-info .email:hover,.contact-info .email:focus{color:#0652ff;font-size:1.125rem;font-weight:800}.about-container{display:flex;flex-direction:column;align-items:center;text-align:center}@media screen and (min-width: 62rem){.about-container{flex-direction:row;align-items:flex-start}}@media screen and (min-width: 75rem){.about-container{justify-content:center}}.avatar{display:flex;justify-content:center;max-width:60%;margin-top:0}@media screen and (min-width: 35rem){.avatar{margin:2rem 2rem 0}}@media screen and (min-width: 62rem){.avatar{min-width:35%;max-width:45%}}.about-text{max-width:60ch}@media screen and (min-width: 62rem){.about-text{padding-left:2rem}}.coming-soon{background:linear-gradient(0deg, #0652ff, #ccc 44%, #fff 46%, #ccc 48%, #0652ff 100%);border-radius:1rem}.scs-container{display:flex;flex-direction:column;align-items:center;padding:2rem 0;text-align:center}@media screen and (min-width: 35rem){article{min-width:40ch;max-width:60ch}}.sidebar{height:100%;width:12rem;position:fixed;z-index:1;top:0;left:0;overflow:hidden;border-right:4px solid #0652ff;border-:4px solid #0652ff}@media screen and (max-width: 61.9375rem){.sidebar{left:-12rem}}.main{min-height:100%}@media screen and (min-width: 62rem){.main{margin-left:12rem}}.main-inner{max-width:120rem;margin:0 auto;padding-left:1rem;padding-right:1rem}@media screen and (min-width: 62rem){.main-inner{padding-left:2rem;padding-right:2rem}}footer{display:flex;flex-direction:column;justify-content:flex-end;min-height:76dvh}.footer{position:sticky;bottom:1rem;text-align:center;padding:2rem 1rem}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap");
+/* line 12, ../../netmatters/portfolio/scss/base/_reset.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 20, ../../netmatters/portfolio/scss/base/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 30, ../../netmatters/portfolio/scss/base/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* line 49, ../../netmatters/portfolio/scss/base/_reset.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 61, ../../netmatters/portfolio/scss/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 70, ../../netmatters/portfolio/scss/base/_reset.scss */
+[hidden],
+template {
+  display: none; }
+
+/* line 79, ../../netmatters/portfolio/scss/base/_reset.scss */
+a {
+  background: transparent; }
+
+/* line 86, ../../netmatters/portfolio/scss/base/_reset.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* line 95, ../../netmatters/portfolio/scss/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 102, ../../netmatters/portfolio/scss/base/_reset.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 110, ../../netmatters/portfolio/scss/base/_reset.scss */
+dfn {
+  font-style: italic; }
+
+/* line 118, ../../netmatters/portfolio/scss/base/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 126, ../../netmatters/portfolio/scss/base/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 134, ../../netmatters/portfolio/scss/base/_reset.scss */
+small {
+  font-size: 80%; }
+
+/* line 141, ../../netmatters/portfolio/scss/base/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 149, ../../netmatters/portfolio/scss/base/_reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 153, ../../netmatters/portfolio/scss/base/_reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 161, ../../netmatters/portfolio/scss/base/_reset.scss */
+img {
+  border: 0; }
+
+/* line 168, ../../netmatters/portfolio/scss/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 176, ../../netmatters/portfolio/scss/base/_reset.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 183, ../../netmatters/portfolio/scss/base/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 192, ../../netmatters/portfolio/scss/base/_reset.scss */
+pre {
+  overflow: auto; }
+
+/* line 199, ../../netmatters/portfolio/scss/base/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 218, ../../netmatters/portfolio/scss/base/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 231, ../../netmatters/portfolio/scss/base/_reset.scss */
+button {
+  overflow: visible; }
+
+/* line 241, ../../netmatters/portfolio/scss/base/_reset.scss */
+button,
+select {
+  text-transform: none; }
+
+/* line 253, ../../netmatters/portfolio/scss/base/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 264, ../../netmatters/portfolio/scss/base/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/* line 272, ../../netmatters/portfolio/scss/base/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 282, ../../netmatters/portfolio/scss/base/_reset.scss */
+input {
+  line-height: normal; }
+
+/* line 288, ../../netmatters/portfolio/scss/base/_reset.scss */
+*
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 304, ../../netmatters/portfolio/scss/base/_reset.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 314, ../../netmatters/portfolio/scss/base/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 326, ../../netmatters/portfolio/scss/base/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 334, ../../netmatters/portfolio/scss/base/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 344, ../../netmatters/portfolio/scss/base/_reset.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 352, ../../netmatters/portfolio/scss/base/_reset.scss */
+textarea {
+  overflow: auto; }
+
+/* line 360, ../../netmatters/portfolio/scss/base/_reset.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 368, ../../netmatters/portfolio/scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 373, ../../netmatters/portfolio/scss/base/_reset.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 5, ../../netmatters/portfolio/scss/base/_root.scss */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1em; }
+
+/* line 11, ../../netmatters/portfolio/scss/base/_root.scss */
+html {
+  height: 100%; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 5, ../../netmatters/portfolio/scss/base/_base.scss */
+body {
+  font-family: Poppins, sans-serif;
+  letter-spacing: .4px;
+  min-height: 100%; }
+
+/* line 11, ../../netmatters/portfolio/scss/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #000000; }
+
+/* line 16, ../../netmatters/portfolio/scss/base/_base.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (min-width: 35rem) {
+  /* line 22, ../../netmatters/portfolio/scss/base/_base.scss */
+  .small {
+    display: none; } }
+
+@media screen and (min-width: 48rem) {
+  /* line 28, ../../netmatters/portfolio/scss/base/_base.scss */
+  .medium {
+    display: none; } }
+
+@media screen and (max-width: 34.9375rem) {
+  /* line 34, ../../netmatters/portfolio/scss/base/_base.scss */
+  .full {
+    display: none; } }
+
+/* line 40, ../../netmatters/portfolio/scss/base/_base.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 7, ../../netmatters/portfolio/scss/base/_typography.scss */
+.overlay {
+  color: #ffffff; }
+
+/* line 11, ../../netmatters/portfolio/scss/base/_typography.scss */
+.overlay-h1 h1 {
+  text-align: center;
+  text-shadow: -0.3rem 0.3rem 1rem #0652ff;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+  -webkit-text-stroke-width: 0.05rem;
+  -webkit-text-stroke-color: #0652ff;
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  margin: 0; }
+
+/* line 21, ../../netmatters/portfolio/scss/base/_typography.scss */
+.overlay-p p {
+  text-align: center;
+  text-shadow: -0.3rem 0.3rem 1rem #0652ff;
+  font-size: clamp(1.25rem, 2.9vw, 2rem);
+  font-weight: 400;
+  margin: 0; }
+
+/* line 29, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scroll {
+  text-align: center; }
+  /* line 31, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .scroll small {
+    font-size: 0.875rem;
+    color: #ffffff; }
+
+/* line 40, ../../netmatters/portfolio/scss/base/_typography.scss */
+.item-text h3 {
+  font-size: clamp(1rem, 2.1vw, 1.5rem);
+  margin: 0; }
+
+/* line 44, ../../netmatters/portfolio/scss/base/_typography.scss */
+.item-text a {
+  font-size: clamp(0.65rem, 1.7vw, 0.925rem);
+  color: #000000; }
+
+/* line 53, ../../netmatters/portfolio/scss/base/_typography.scss */
+.contact-info h2 {
+  font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+  margin-top: 0; }
+
+/* line 57, ../../netmatters/portfolio/scss/base/_typography.scss */
+.contact-info p {
+  font-size: clamp(0.85rem, 1.9vw, 1.125rem); }
+
+/* line 60, ../../netmatters/portfolio/scss/base/_typography.scss */
+.contact-info a.tel {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-style: normal;
+  font-weight: 600; }
+
+/* line 65, ../../netmatters/portfolio/scss/base/_typography.scss */
+.contact-info a.email {
+  font-size: clamp(0.85rem, 1.6vw, 1.075rem);
+  font-style: normal;
+  font-weight: 600; }
+
+/* line 74, ../../netmatters/portfolio/scss/base/_typography.scss */
+.about-header {
+  text-align: center;
+  margin: 1rem 0; }
+  /* line 77, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-header h2 {
+    font-size: clamp(1.325rem, 2.4vw, 1.925rem); }
+    @media screen and (min-width: 62rem) {
+      /* line 77, ../../netmatters/portfolio/scss/base/_typography.scss */
+      .about-header h2 {
+        margin: 0; } }
+
+/* line 85, ../../netmatters/portfolio/scss/base/_typography.scss */
+.about-text p {
+  font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+  text-align: justify; }
+
+/* line 90, ../../netmatters/portfolio/scss/base/_typography.scss */
+.about-content li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 1rem; }
+  /* line 94, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-content li.html {
+    text-shadow: 0 0 0.5rem #f06529; }
+  /* line 97, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-content li.css {
+    text-shadow: 0 0 0.5rem #2965f1; }
+  /* line 100, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-content li.sass {
+    text-shadow: 0 0 0.5rem #cc6699; }
+  /* line 103, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-content li.git {
+    text-shadow: 0 0 0.5rem #f1502f; }
+  /* line 106, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-content li.bash {
+    text-shadow: 0 0 0.5rem #4eaa25; }
+
+/* line 113, ../../netmatters/portfolio/scss/base/_typography.scss */
+.coming-soon {
+  text-align: center; }
+  /* line 115, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .coming-soon h2 {
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: clamp(3rem, 7vw, 7rem); }
+
+/* line 125, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container h2 {
+  font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+  margin: 0 0 0.5rem; }
+
+/* line 129, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container h3 {
+  font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+  margin: 0; }
+
+/* line 133, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container h4 {
+  font-size: clamp(1rem, 2vw, 1.325rem);
+  margin: 0; }
+
+/* line 137, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container em {
+  font-size: inherit;
+  margin: 0 0 0.5rem; }
+
+/* line 141, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container p {
+  font-size: clamp(0.8rem, 1.4vw, 1.125rem);
+  text-align: justify;
+  margin: 0; }
+
+/* line 146, ../../netmatters/portfolio/scss/base/_typography.scss */
+.scs-container li {
+  font-size: clamp(0.8rem, 1.4vw, 1.125rem);
+  margin: 0; }
+
+/* line 7, ../../netmatters/portfolio/scss/components/_img.scss */
+.hero picture > img {
+  width: 100%;
+  height: 100vh;
+  object-fit: none; }
+  @media screen and (min-width: 62rem) {
+    /* line 7, ../../netmatters/portfolio/scss/components/_img.scss */
+    .hero picture > img {
+      max-height: 67.5rem; } }
+
+/* line 18, ../../netmatters/portfolio/scss/components/_img.scss */
+.item-img img {
+  width: 100%; }
+
+/* line 24, ../../netmatters/portfolio/scss/components/_img.scss */
+.avatar picture img {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%; }
+
+/* line 7, ../../netmatters/portfolio/scss/components/_icons.scss */
+[data-icon]:before {
+  font-family: "icomoon";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 18, ../../netmatters/portfolio/scss/components/_icons.scss */
+.scroll span {
+  color: #ffffff; }
+
+@media screen and (min-width: 62rem) {
+  /* line 5, ../../netmatters/portfolio/scss/components/_forms.scss */
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; } }
+
+/* line 13, ../../netmatters/portfolio/scss/components/_forms.scss */
+.form-control {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #dddddd;
+  padding-left: 1rem;
+  border: none;
+  border-color: transparent;
+  border-radius: 0.35rem;
+  margin: 0 0 1rem;
+  position: relative;
+  top: 0;
+  transition: 500ms ease; }
+  /* line 114, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .form-control:hover, .form-control:focus {
+    top: -0.25rem;
+    transition: 500ms ease;
+    box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15); }
+  /* line 125, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .form-control:hover, .form-control:focus, .form-control:active {
+    border: 1px solid #0652ff;
+    background-color: #f7f7f7; }
+
+/* line 26, ../../netmatters/portfolio/scss/components/_forms.scss */
+textarea {
+  resize: vertical; }
+
+@media screen and (min-width: 48rem) {
+  /* line 30, ../../netmatters/portfolio/scss/components/_forms.scss */
+  .btn-group {
+    display: flex;
+    justify-content: flex-end; } }
+
+/* line 5, ../../netmatters/portfolio/scss/components/_buttons.scss */
+.menu {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0652ff;
+  opacity: 0.7;
+  border-radius: 0.5rem;
+  z-index: 2; }
+  /* line 18, ../../netmatters/portfolio/scss/components/_buttons.scss */
+  .menu:hover, .menu:focus {
+    opacity: 1; }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    .menu {
+      display: none; } }
+
+/* line 27, ../../netmatters/portfolio/scss/components/_buttons.scss */
+.menu-btn {
+  text-align: center;
+  font-size: 2rem;
+  background: transparent;
+  border: none; }
+
+/* line 34, ../../netmatters/portfolio/scss/components/_buttons.scss */
+.btn {
+  width: 90%;
+  font-size: .825rem;
+  font-weight: 600;
+  background-color: #0652ff;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 0.5rem; }
+  /* line 136, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .btn:hover, .btn:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0048ec; }
+  @media screen and (min-width: 35rem) {
+    /* line 34, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    .btn {
+      padding: 0.75rem 3rem; } }
+  @media screen and (min-width: 48rem) {
+    /* line 34, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    .btn {
+      width: 12rem;
+      border-radius: 0.75rem; } }
+
+/* line 5, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 4px solid #0652ff;
+  border-: 4px solid #0652ff; }
+
+/* line 12, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #0652ff;
+  -webkit-text-fill-color: #0652ff;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  padding: 1rem 0; }
+  /* line 20, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .logo:hover, .logo:focus {
+    font-size: 5.2rem;
+    -webkit-text-fill-color: #3975ff;
+    padding: 0.8595rem 0;
+    text-shadow: 0 0 0.5rem #0652ff; }
+
+/* line 29, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.links {
+  text-align: center;
+  padding: 2rem 0 1rem; }
+  /* line 32, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .links > :last-child {
+    border-top: 2px solid #0652ff;
+    border-bottom: 2px solid #0652ff; }
+  /* line 35, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .links li {
+    margin: 1rem 0; }
+  /* line 38, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .links li:nth-child(-n+4) > a {
+    position: relative; }
+    /* line 44, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links li:nth-child(-n+4) > a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.375rem;
+      width: 100%;
+      height: 2px;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 56, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links li:nth-child(-n+4) > a:hover::after, .links li:nth-child(-n+4) > a:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+  /* line 42, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .links a {
+    font-size: .925rem;
+    font-weight: 400;
+    line-height: 2rem;
+    transition: color 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 67, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links a:hover, .links a:focus {
+      color: #0652ff;
+      font-size: 1rem;
+      font-weight: 800; }
+
+/* line 50, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.3rem; }
+
+/* line 56, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.social-icn {
+  text-align: center; }
+  /* line 58, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .social-icn a {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: color 250ms ease-in 150ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 80, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .social-icn a:hover, .social-icn a:focus {
+      color: #0652ff;
+      font-size: 1.8rem; }
+
+/* line 65, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12rem;
+  margin-top: 5rem; }
+
+/* line 73, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.stack-icn {
+  padding: 2rem; }
+  /* line 75, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .stack-icn img {
+    width: 5rem; }
+
+/* line 7, ../../netmatters/portfolio/scss/layout/_home.scss */
+.hero {
+  position: relative; }
+
+/* line 11, ../../netmatters/portfolio/scss/layout/_home.scss */
+.overlay-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1; }
+
+/* line 19, ../../netmatters/portfolio/scss/layout/_home.scss */
+.overlay {
+  height: 100%; }
+
+/* line 24, ../../netmatters/portfolio/scss/layout/_home.scss */
+.overlay-h1 {
+  position: relative;
+  top: 0;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+/* line 33, ../../netmatters/portfolio/scss/layout/_home.scss */
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  z-index: 2; }
+
+/* line 44, ../../netmatters/portfolio/scss/layout/_home.scss */
+.overlay-p {
+  margin: 0; }
+
+/* line 48, ../../netmatters/portfolio/scss/layout/_home.scss */
+.scroll {
+  padding-bottom: 1rem; }
+
+/* line 5, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+.portfolio-container {
+  padding: 1rem 0 0; }
+  @media screen and (min-width: 48rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+    .portfolio-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1rem; } }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+    .portfolio-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem 0 2rem; } }
+
+/* line 21, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+.item {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, #0652ff, transparent 18%, #ffffff 100%);
+  border-radius: 0 0 0.4rem 0.4rem;
+  position: relative;
+  top: 0;
+  transition: 500ms ease; }
+  /* line 114, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .item:hover, .item:focus {
+    top: -1rem;
+    transition: 500ms ease;
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15); }
+  /* line 90, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .item-img::before {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -90%;
+    width: 150%;
+    height: 4rem;
+    z-index: 1;
+    background-color: #ffffff;
+    opacity: 0.2;
+    transform: rotate(45deg);
+    transition: all 350ms ease-in; }
+  /* line 103, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  .item:hover .item-img::before,
+  .item:focus .item-img::before {
+    bottom: 100%;
+    left: 40%; }
+  @media screen and (max-width: 47.9375rem) {
+    /* line 21, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+    .item {
+      margin-bottom: 1.5rem; } }
+
+/* line 33, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+.item-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.4rem 0.4rem 0 0; }
+
+/* line 39, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+.item-text {
+  padding: 0 0.5rem 0.5rem; }
+  @media screen and (max-width: 47.9375rem) {
+    /* line 39, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
+    .item-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3rem;
+      padding-top: 0.5rem; } }
+
+/* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background: #cccccc;
+  padding: 2rem;
+  border-radius: 1rem; }
+  @media screen and (max-width: 47.9375rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-container {
+      text-align: center; } }
+  @media screen and (min-width: 35rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-container {
+      margin: 2rem 0 0; } }
+  @media screen and (min-width: 48rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 3fr 4fr;
+      gap: 2rem; } }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-container {
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (min-width: 75rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-container {
+      grid-template-columns: 2fr 3fr; } }
+
+/* line 30, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.contact-info {
+  padding-bottom: 2rem; }
+  /* line 32, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .contact-info .tel {
+    position: relative;
+    transition: color 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 44, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0rem;
+      width: 100%;
+      height: 2px;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 56, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel:hover::after, .contact-info .tel:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+    /* line 67, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel:hover, .contact-info .tel:focus {
+      color: #0652ff;
+      font-size: 1.5rem;
+      font-weight: 800; }
+  /* line 37, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .contact-info .email {
+    position: relative;
+    transition: color 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 44, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.1rem;
+      width: 100%;
+      height: 2px;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 56, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email:hover::after, .contact-info .email:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+    /* line 67, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email:hover, .contact-info .email:focus {
+      color: #0652ff;
+      font-size: 1.125rem;
+      font-weight: 800; }
+
+/* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
+    .about-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center; } }
+  @media screen and (min-width: 75rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
+    .about-container {
+      justify-content: space-around; } }
+
+/* line 21, ../../netmatters/portfolio/scss/layout/_about.scss */
+.avatar {
+  margin-top: 0; }
+  @media screen and (min-width: 35rem) {
+    /* line 21, ../../netmatters/portfolio/scss/layout/_about.scss */
+    .avatar {
+      margin: 2rem 0 2rem; } }
+
+/* line 28, ../../netmatters/portfolio/scss/layout/_about.scss */
+.about-text {
+  max-width: 60ch;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 62rem) {
+    /* line 28, ../../netmatters/portfolio/scss/layout/_about.scss */
+    .about-text {
+      padding-left: 2rem;
+      margin-bottom: 2rem; } }
+
+/* line 5, ../../netmatters/portfolio/scss/layout/_coding.scss */
+.coming-soon {
+  background: linear-gradient(0deg, #0652ff, #cccccc 44%, #ffffff 46%, #cccccc 48%, #0652ff 100%);
+  border-radius: 1rem; }
+
+/* line 5, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.scs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  text-align: center; }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+    .scs-container {
+      display: grid;
+      grid-template-areas: ". . header header header header header header . ." ". main main main main main main-logo main-logo . ." ". . footer-logo footer-logo footer footer footer footer footer .";
+      align-items: start; } }
+
+/* line 24, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.scs-item article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0; }
+
+@media screen and (min-width: 35rem) {
+  /* line 35, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .scs-item p {
+    min-width: 40ch;
+    max-width: 60ch; } }
+
+/* line 42, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.scion {
+  grid-area: header; }
+  /* line 44, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .scion article {
+    background-color: #6c99ff; }
+
+/* line 49, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.treehouse {
+  grid-area: main; }
+  /* line 51, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .treehouse article {
+    background-color: #54d98c; }
+
+/* line 56, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.logo1 {
+  grid-area: main-logo; }
+  /* line 58, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .logo1 img {
+    width: 100%; }
+    @media screen and (min-width: 62rem) {
+      /* line 58, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+      .logo1 img {
+        width: 80%;
+        margin: 3rem 0 0 3rem; } }
+
+/* line 67, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.logo2 {
+  grid-area: footer-logo; }
+  /* line 69, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .logo2 img {
+    width: 45%;
+    border-radius: 50%; }
+    @media screen and (min-width: 62rem) {
+      /* line 69, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+      .logo2 img {
+        width: 65%;
+        margin: 3rem 3rem 0 0; } }
+
+/* line 79, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+.netmatters {
+  grid-area: footer; }
+  /* line 81, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  .netmatters article {
+    background-color: #b8a1cc; }
+
+/* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.sidebar {
+  height: 100%;
+  width: 12rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-right: 4px solid #0652ff;
+  border-: 4px solid #0652ff; }
+  @media screen and (max-width: 61.9375rem) {
+    /* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    .sidebar {
+      left: -12rem; } }
+
+/* line 19, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.main {
+  min-height: 100%; }
+  @media screen and (min-width: 62rem) {
+    /* line 19, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    .main {
+      margin-left: 12rem; } }
+
+/* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.main-inner {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media screen and (min-width: 62rem) {
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    .main-inner {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+/* line 39, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 78dvh; }
+
+/* line 46, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.footer {
+  position: sticky;
+  bottom: 1rem;
+  text-align: center;
+  padding: 2rem 0 0.5rem; }
+
+/*# sourceMappingURL=main.css.map */

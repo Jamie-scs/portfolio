@@ -107,7 +107,7 @@
   }
 }
 
-@mixin lift($lift, $color)      {
+@mixin lift($lift, $shadow, $color)      {
   position: relative;
   top: 0;
   transition: 500ms ease;
@@ -115,7 +115,7 @@
   &:focus                 {
     top: -#{$lift};
     transition: 500ms ease;
-    box-shadow: 0 3px 35px rgba($color, .1);
+    box-shadow: 0 $shadow $shadow $shadow rgba($color, .15);
   }
 }
 
@@ -124,7 +124,7 @@
 @mixin highlight($color1, $color2)  {
   &:hover,
   &:focus,
-  &:active                 {
+  &:active               {
     border: 1px solid $color1;
     background-color: $color2;
   }
@@ -136,6 +136,7 @@
     &:hover,
     &:focus                {
         text-decoration: none;
-        background-color: darken($color, 10%);
+        color: $white;
+        background-color: darken($color, 5%);
     }
 }

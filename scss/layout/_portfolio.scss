@@ -13,7 +13,7 @@
 	@include mqm(large)		{
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: 1fr 1fr;
-		gap: 1rem;
+		gap: 2rem;
 		padding: 2rem 0 2rem;
 	}
 }
@@ -23,7 +23,7 @@
 	flex-direction: column;
 	background: linear-gradient(0deg, $color-pri, transparent 18%, $white 100%);
 	border-radius: 0 0 0.4rem 0.4rem;
-	@include lift(1rem, black);
+	@include lift(1rem, 0.5rem, black);
 	@include fancy-shine;
 	@include mqx(medium)	{
 		margin-bottom: 1.5rem;
