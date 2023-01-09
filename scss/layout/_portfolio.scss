@@ -1,0 +1,50 @@
+// ========================================
+// Portfolio
+// ========================================
+
+.portfolio-container	{
+	padding: 1rem 0 0;
+	@include mqm(medium)	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		gap: 1rem;
+	}
+	@include mqm(large)		{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 1fr;
+		gap: 1rem;
+		padding: 2rem 0 2rem;
+	}
+}
+
+.item 					{
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(0deg, $color-pri, transparent 18%, $white 100%);
+	border-radius: 0 0 0.4rem 0.4rem;
+	@include lift(1rem, black);
+	@include fancy-shine;
+	@include mqx(medium)	{
+		margin-bottom: 1.5rem;
+	}
+}
+
+.item-img				{
+	position: relative;
+	overflow: hidden;
+	border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.item-text				{
+	padding: 0 0.5rem 0.5rem;
+	@include mqx(medium)	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 3rem;
+		padding-top: 0.5rem;
+	}
+}
+
+	

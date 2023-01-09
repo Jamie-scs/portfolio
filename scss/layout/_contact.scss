@@ -1,0 +1,40 @@
+// ========================================
+// Contact
+// ========================================
+
+.contact-container	{
+	display: flex;
+	flex-direction: column;
+	background: $search;
+	padding: 2rem;
+	border-radius: 1rem;
+	@include mqx(medium)	{
+		text-align: center;
+	}
+	@include mqm(small)	{
+		margin: 2rem 0 0;
+	}
+	@include mqm(medium)	{
+		display: grid;
+		grid-template-columns: 2fr 5fr;
+		gap: 3rem;
+	}
+}
+
+.contact-info		{
+	padding-bottom: 2rem;
+	.tel				{
+		position: relative;
+		@include fancy-line(-.1rem);
+		@include fancy-text(1.5rem);
+	}
+	.email				{
+		position: relative;
+		@include fancy-line(-.1rem);
+		@include fancy-text(1.125rem);
+	}
+}
+
+.contact-form	{
+	
+}

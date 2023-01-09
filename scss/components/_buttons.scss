@@ -1,0 +1,51 @@
+// ========================================
+// Buttons
+// ========================================
+
+.menu				{
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-pri;
+	opacity: 0.7;
+	border-radius: 0.5rem;
+	z-index: 2;
+	&:hover,
+	&:focus	{
+		opacity: 1;
+	}
+	@include mqm(large)	{
+		display: none;
+	}
+}
+
+.menu-btn			{
+	text-align: center;
+	font-size: 2rem;
+	background: transparent;
+	border: none;
+}
+
+.btn 				{
+	width: 40%;
+	font-size: .825rem;
+	font-weight: 600;
+	background-color: $color-pri;
+	padding: 0.75rem 3rem;
+	border: none;
+	border-radius: 0.5rem;
+	@include btn($color-pri);
+	@include mqm(medium)	{
+		width: 55%;
+		border-radius: 0.75rem;
+	}
+	@include mqm(x-large)	{
+		width: 35%;
+		border-radius: 0.75rem;
+	}
+}

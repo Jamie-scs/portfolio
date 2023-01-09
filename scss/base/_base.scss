@@ -1,0 +1,31 @@
+// ========================================
+// Base Styles
+// ========================================
+
+body 				{
+	font-family: Poppins, sans-serif;
+	letter-spacing: .4px;
+	min-height: 100%;
+}
+
+a 					{
+	text-decoration: none;
+	color: $black;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.medium				{
+	@include mqm(medium)	{
+		display: none;
+	}
+}
+
+.hidden				{
+	display: none;
+	visibility: hidden;
+}

@@ -1,0 +1,129 @@
+// ========================================
+// Typography
+// ========================================
+
+// Hero
+
+.overlay			{
+	color: $white;
+}
+
+.overlay-h1	h1		{
+	text-align: center;
+	text-shadow: -0.3rem 0.3rem 1rem $color-pri;
+	font-size: clamp(2.4rem, 5.5vw, 4rem);
+	margin: 0;
+}
+
+.overlay-p p 		{
+	text-align: center;
+	text-shadow: -0.3rem 0.3rem 1rem $color-pri;
+	font-size: clamp(1.25rem, 2.9vw, 2rem);
+	font-weight: 400;
+	margin: 0;
+}
+
+.scroll 			{
+	text-align: center;
+	small			{
+		font-size: 0.875rem;
+		color: $white;
+	}
+}
+
+// Portfolio
+
+.item-text			{
+	h3					{
+		font-size: clamp(1rem, 2.1vw, 1.5rem);
+		margin: 0;
+	}
+	a 					{
+		font-size: clamp(0.65rem, 1.7vw, 0.925rem);
+		color: $black;
+	}
+}
+
+// Contact
+
+.contact-info		{
+	h2 					{
+		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+		margin-top: 0;
+	}
+	p 					{
+		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+	}
+	a.tel 					{
+		font-size: clamp(1rem, 2.1vw, 1.5rem);
+		font-style: normal;
+		font-weight: 600;
+	}
+	a.email 					{
+		font-size: clamp(0.85rem, 1.7vw, 1.125rem);
+		font-style: normal;
+		font-weight: 600;
+	}
+}
+
+// About
+
+.about-header		{
+	text-align: center;
+	margin-top: 2rem;
+	h2 					{
+		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+		@include mqm(large)	{
+			margin-top: 0;
+		}
+	}
+}
+
+.about-text			{
+	p 					{
+		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+		text-align: justify;
+		@include mqm(small)	{
+			text-align: center;
+		}
+		@include mqm(large)	{
+			text-align: justify;
+		}
+		@include mqm(x-large)	{
+			text-align: center;
+		}
+	}
+}
+
+// Coding
+
+.coming-soon		{
+	text-align: center;
+	h2 					{
+	font-weight: 900;
+	text-transform: capitalize;
+	font-size: clamp(3rem, 7vw, 7rem);
+	}
+}
+
+// SCS-Scheme
+
+.scs-container		{
+	h2 					{
+		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+		margin: 1rem 0;
+	}
+	h3 				{
+		font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+	}
+	h4				{
+		font-size: clamp(1rem, 2vw, 1.325rem);
+	}
+	em 					{
+		font-size: inherit;
+	}
+	p 					{
+		font-size: clamp(0.85rem, 1.9vw, 1.125rem);
+		text-align: justify;
+	}
+}

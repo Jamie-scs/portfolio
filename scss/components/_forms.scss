@@ -1,0 +1,27 @@
+// ========================================
+// Form Elements
+// ========================================
+
+.form-group			{
+	@include mqm(large)	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+}
+
+.form-control		{
+	width: 100%;
+	height: 2.5rem;
+	background-color: $news-border;
+	padding-left: 1rem;
+	border: none;
+	border-radius: 0.35rem;
+	margin: 0 0 1rem;
+	@include lift(.25rem, black);
+	@include highlight($color-pri, lighten($news-border, 15%));
+	&[name="message"]	{
+	height: 10rem;
+	}
+}
+

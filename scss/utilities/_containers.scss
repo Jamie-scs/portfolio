@@ -1,0 +1,43 @@
+// ========================================
+// Containers
+// ========================================
+
+.sidebar			{
+	height: 100%;
+	width: $sidebar;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	@include b-pri(right);
+	@include mqx(large)	{
+		display: none;
+	}
+}
+
+.main 				{
+	min-height: 100%;
+	@include mqm(large)	{
+		margin-left: $sidebar;
+	}
+}
+
+.main-inner			{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	@include mqm(large)	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+// Footer
+
+.footer 			{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-height: 80vh;
+	text-align: center;
+	padding-bottom: 1rem;
+}
