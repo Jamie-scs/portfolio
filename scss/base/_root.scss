@@ -6,6 +6,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 1rem;
+	&:focus				{
+		outline: 0;
+	}
 }
 
 html				{

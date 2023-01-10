@@ -3,13 +3,14 @@
 // ========================================
 
 .logo-container		{
-	display: flex;
-	justify-content: center;
 	width: 100%;
+	height: 8rem;
+	text-align: center;
 	@include b-pri(bottom);
 }
 
 .logo				{
+	margin: auto;
 	font-size: 5rem;
 	font-weight: 900;
 	color: $color-pri;
@@ -21,7 +22,7 @@
 	&:focus         {
 		font-size: 5.2rem;
 		-webkit-text-fill-color: lighten($color-pri, 10%);
-		padding: 0.8595rem 0;
+		padding: 0.9rem 0;
 		text-shadow: 0 0 0.5rem $color-pri;
 	}
 }
@@ -30,7 +31,7 @@
 	text-align: center;
 	padding: 2rem 0 1rem;
 	>:last-child		{
-		@include b-sec(top,bottom);
+		@include b-sec(top, bottom);
 	}
 	li 					{
 		margin: 1rem 0;
@@ -49,30 +50,35 @@
 
 .social				{
 	display: flex;
-	justify-content: space-between;
-	margin: 0 1.3rem;
+	justify-content: space-evenly;
+	padding-bottom: 1rem;
+	margin: 1rem 0 0;
 }
 
 .social-icn				{
 	text-align: center;
-	a > span					{
+	height: 4rem;
+	a span					{
 		font-size: 2rem;
 		padding: 0.5rem;
-		@include fancy-icon(2.5rem);
+	}
+	&:first-child a > span			{
+		@include fancy-icon(2rem, $facebook);
+	}
+	&:nth-child(2) a > span			{
+		@include fancy-icon(2rem, $linkedin);
+	}
+	&:last-child a > span			{
+		@include fancy-icon(2rem, $git);
 	}
 }
 
-.stack				{
+.stack-row				{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: $sidebar;
-	margin-top: 5rem;
+	justify-content: space-evenly;
+	margin: 1rem 0;
 }
 
-.stack-icn			{
-	padding: 2rem;
-	img			{
-		width: 5rem;
-	}
+.stack-icn img			{
+	width: 2.5rem;
 }
