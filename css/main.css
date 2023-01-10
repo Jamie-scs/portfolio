@@ -452,7 +452,7 @@ ul {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1.5;
+  line-height: 1;
   -webkit-font-smoothing: antialiased; }
 
 /* line 18, ../../netmatters/portfolio/scss/components/_icons.scss */
@@ -525,12 +525,14 @@ textarea {
 .menu-btn {
   text-align: center;
   color: #ffffff;
-  font-size: 1.83rem;
-  line-height: 2;
   background: transparent;
   border: none; }
+  /* line 32, ../../netmatters/portfolio/scss/components/_buttons.scss */
+  .menu-btn > span {
+    font-size: 1.83rem;
+    line-height: 2; }
 
-/* line 36, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 38, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .btn {
   width: 90%;
   min-height: 2.75rem;
@@ -546,11 +548,11 @@ textarea {
     color: #ffffff;
     background-color: #0048ec; }
   @media screen and (min-width: 35rem) {
-    /* line 36, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    /* line 38, ../../netmatters/portfolio/scss/components/_buttons.scss */
     .btn {
       padding: 0.75rem 3rem; } }
   @media screen and (min-width: 48rem) {
-    /* line 36, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    /* line 38, ../../netmatters/portfolio/scss/components/_buttons.scss */
     .btn {
       width: 12rem;
       border-radius: 0.75rem; } }
