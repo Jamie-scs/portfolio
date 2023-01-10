@@ -6,7 +6,7 @@
 	display: flex;
 	flex-direction: column;
 	background: $search;
-	padding: 2rem;
+	padding: 1rem;
 	border-radius: 1rem;
 	@include mqx(medium)	{
 		text-align: center;
@@ -18,9 +18,11 @@
 		display: grid;
 		grid-template-columns: 3fr 4fr;
 		gap: 2rem;
+		padding: 1.5rem;
 	}
 	@include mqm(large)		{
 		grid-template-columns: 1fr 1fr;
+		padding: 2rem;
 	}
 	@include mqm(x-large)		{
 		grid-template-columns: 2fr 3fr;
@@ -28,7 +30,6 @@
 }
 
 .contact-info		{
-	padding-bottom: 2rem;
 	.tel				{
 		position: relative;
 		@include fancy-line(0rem);

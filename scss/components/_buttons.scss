@@ -6,8 +6,8 @@
 	position: absolute;
 	top: 1rem;
 	left: 1rem;
-	width: 4rem;
-	height: 4rem;
+	width: 2.75rem;
+	height: 2.75rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,17 +27,18 @@
 .menu-btn			{
 	text-align: center;
 	color: $white;
-	font-size: 2.6rem;
-	line-height: 1.8rem;
+	font-size: 1.83rem;
+	line-height: 2;
 	background: transparent;
 	border: none;
 }
 
 .btn 				{
 	width: 90%;
+	min-height: 2.75rem;
 	font-size: .825rem;
 	font-weight: 600;
-	background-color: $color-pri;
+	background-color: lighten($color-pri, 10%);
 	padding: 0.75rem 1.75rem;
 	border: none;
 	border-radius: 0.5rem;
