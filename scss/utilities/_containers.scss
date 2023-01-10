@@ -40,7 +40,21 @@ footer 				{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	min-height: 78dvh;
+	@include mqm(small)	{
+		min-height: 66.8dvh;
+	}
+	@include mqm(medium)	{
+		min-height: 77.8dvh;
+	}
+	@include mqm(large)	{
+		min-height: 71.5dvh;
+	}
+	@include mqm(x-large)	{
+		min-height: 72dvh;
+	}
+	@include mqm(xx-large)	{
+		min-height: 77dvh;
+	}
 }
 
 .footer 			{

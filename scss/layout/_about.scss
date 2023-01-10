@@ -12,6 +12,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;
+		align-items: flex-start;
 	}
 	@include mqm(x-large)	{
 		justify-content: space-around;
@@ -29,7 +30,7 @@
 	max-width: 60ch;
 	margin-bottom: 1rem;
 	@include mqm(large)	{
-		padding-left: 2rem;
-		margin-bottom: 2rem;
+		padding-left: 1rem;
+		margin-bottom: 1rem;
 	}
 }

@@ -80,6 +80,7 @@
 	text-align: center;
 	margin: 1rem 0;
 	h2 					{
+		padding: 1rem 0;
 		font-size: clamp(1.325rem, 2.4vw, 1.925rem);
 		@include mqm(large)	{
 			margin: 0;
@@ -92,7 +93,7 @@
 	text-align: justify;
 }
 
-.about-content li 					{
+.about-skills li 					{
 	display: inline-block;
 	font-size: 1.5rem;
 	padding: 0 1rem;
