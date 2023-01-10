@@ -65,11 +65,11 @@
 	a.email 					{
 		font-style: normal;
 		font-weight: 600;
-		@include mqx(medium)			{
-			font-size: clamp(0.65rem, 3.5vw, 1rem);
+		@include mqx(x-large)			{
+			font-size: clamp(0.6rem, 2vw, 1rem);
 		}
-		@include mqm(medium)			{
-			font-size: clamp(0.85rem, 3vw, 1.125rem);
+		@include mqm(x-large)			{
+			font-size: clamp(0.6rem, 3.5vw, 1.125rem);
 		}
 	}
 }

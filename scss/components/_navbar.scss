@@ -14,7 +14,7 @@
 	font-weight: 900;
 	color: $color-pri;
 	-webkit-text-fill-color: $color-pri;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 0.1rem;
 	-webkit-text-stroke-color: black;
 	padding: 1rem 0;
 	&:hover,
@@ -40,7 +40,7 @@
 		@include fancy-line;
 	}
 	a 					{
-		font-size: .925rem;
+		font-size: 0.925rem;
 		font-weight: 400;
 		line-height: 2rem;
 		@include fancy-text(1rem);
@@ -55,10 +55,10 @@
 
 .social-icn				{
 	text-align: center;
-	a 					{
-		font-size: 1.5rem;
+	a > span					{
+		font-size: 2rem;
 		padding: 0.5rem;
-		@include fancy-icon(1.8rem);
+		@include fancy-icon(2.5rem);
 	}
 }
 

@@ -29,13 +29,13 @@
 // Border
 
 @mixin b-pri($side1,$side2:null)         {
-  border-#{$side1}: 4px solid $color-pri;
-  border-#{$side2}: 4px solid $color-pri;
+  border-#{$side1}: 0.2rem solid $color-pri;
+  border-#{$side2}: 0.2rem solid $color-pri;
 }
 
 @mixin b-sec($side1,$side2:null)         {
-  border-#{$side1}: 2px solid $color-pri;
-  border-#{$side2}: 2px solid $color-pri;
+  border-#{$side1}: 0.1rem solid $color-pri;
+  border-#{$side2}: 0.1rem solid $color-pri;
 }
 
 // Link Hover
@@ -47,7 +47,7 @@
     left: 0;
     bottom: $offset;
     width: 100%;
-    height: 2px;
+    height: 0.1rem;
     background-color: $color-pri;
     transform: scaleX(0);
     transform-origin: right;
@@ -125,7 +125,7 @@
   &:hover,
   &:focus,
   &:active               {
-    border: 1px solid $color1;
+    border: 0.05rem solid $color1;
     background-color: $color2;
   }
 }
