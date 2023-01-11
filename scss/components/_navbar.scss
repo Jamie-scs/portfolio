@@ -61,15 +61,20 @@
 	height: 4rem;
 	a span					{
 		font-size: 2rem;
+		background-color: transparent;
 		padding: 0.5rem;
+		border-radius: 45%;
 	}
 	&:first-child a > span			{
+		color: $facebook;
 		@include fancy-icon(2rem, $facebook);
 	}
 	&:nth-child(2) a > span			{
+		color: $linkedin;
 		@include fancy-icon(2rem, $linkedin);
 	}
 	&:last-child a > span			{
+		color: $git;
 		@include fancy-icon(2rem, $git);
 	}
 }

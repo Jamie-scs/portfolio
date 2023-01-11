@@ -480,12 +480,12 @@ ul {
   position: relative;
   top: 0;
   transition: 500ms ease; }
-  /* line 114, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 115, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .form-control:hover, .form-control:focus {
     top: -0.25rem;
     transition: 500ms ease;
     box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.15); }
-  /* line 125, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 126, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .form-control:hover, .form-control:focus, .form-control:active {
     border: 0.05rem solid #0652ff;
     background-color: #f7f7f7; }
@@ -543,7 +543,7 @@ textarea {
   padding: 0.75rem 1.75rem;
   border: none;
   border-radius: 0.5rem; }
-  /* line 136, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 137, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #ffffff;
@@ -641,42 +641,50 @@ textarea {
   /* line 62, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn a span {
     font-size: 2rem;
-    padding: 0.5rem; }
-  /* line 66, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 45%; }
+  /* line 68, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:first-child a > span {
-    transition: color 250ms ease-in 150ms;
+    color: #3b5998;
+    transition: background-color, color 250ms ease-in 150ms;
     transition: font-size 50ms ease-out 50ms; }
     /* line 79, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
     .social-icn:first-child a > span:hover, .social-icn:first-child a > span:focus {
-      color: #3b5998;
-      font-size: 2.5rem;
-      padding: 0.25rem; }
-  /* line 69, ../../netmatters/portfolio/scss/components/_navbar.scss */
-  .social-icn:nth-child(2) a > span {
-    transition: color 250ms ease-in 150ms;
-    transition: font-size 50ms ease-out 50ms; }
-    /* line 79, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-    .social-icn:nth-child(2) a > span:hover, .social-icn:nth-child(2) a > span:focus {
-      color: #0077b5;
+      color: #ffffff;
+      background-color: #3b5998;
       font-size: 2.5rem;
       padding: 0.25rem; }
   /* line 72, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .social-icn:nth-child(2) a > span {
+    color: #0077b5;
+    transition: background-color, color 250ms ease-in 150ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 79, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .social-icn:nth-child(2) a > span:hover, .social-icn:nth-child(2) a > span:focus {
+      color: #ffffff;
+      background-color: #0077b5;
+      font-size: 2.5rem;
+      padding: 0.25rem; }
+  /* line 76, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:last-child a > span {
-    transition: color 250ms ease-in 150ms;
+    color: #f1502f;
+    transition: background-color, color 250ms ease-in 150ms;
     transition: font-size 50ms ease-out 50ms; }
     /* line 79, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
     .social-icn:last-child a > span:hover, .social-icn:last-child a > span:focus {
-      color: #f1502f;
+      color: #ffffff;
+      background-color: #f1502f;
       font-size: 2.5rem;
       padding: 0.25rem; }
 
-/* line 77, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 82, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-row {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem 0; }
 
-/* line 83, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 88, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-icn img {
   width: 2.5rem; }
 
@@ -754,12 +762,12 @@ textarea {
   position: relative;
   top: 0;
   transition: 500ms ease; }
-  /* line 114, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 115, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .item:hover, .item:focus {
     top: -1rem;
     transition: 500ms ease;
     box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15); }
-  /* line 90, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 91, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .item-img::before {
     content: "";
     position: absolute;
@@ -772,7 +780,7 @@ textarea {
     opacity: 0.2;
     transform: rotate(45deg);
     transition: all 350ms ease-in; }
-  /* line 103, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  /* line 104, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .item:hover .item-img::before,
   .item:focus .item-img::before {
     bottom: 100%;

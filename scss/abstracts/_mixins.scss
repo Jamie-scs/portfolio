@@ -73,12 +73,13 @@
 
 // Icon Hover
 
-@mixin fancy-icon($fontsize, $color:$color-pri)       {
-  transition: color 250ms ease-in 150ms;
+@mixin fancy-icon($fontsize, $color)       {
+  transition: background-color, color 250ms ease-in 150ms;
   transition: font-size 50ms ease-out 50ms;
   &:hover,
   &:focus          {
-    color: $color;
+    color: $white;
+    background-color: $color;
     font-size: $fontsize * 1.25;
     padding: 0.25rem;
   }
