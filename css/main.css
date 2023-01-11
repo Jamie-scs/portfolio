@@ -641,7 +641,7 @@ textarea {
   /* line 62, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn a span {
     font-size: 2rem;
-    background-color: transparent;
+    background-color: #ffffff;
     padding: 0.5rem;
     border-radius: 45%; }
   /* line 68, ../../netmatters/portfolio/scss/components/_navbar.scss */
