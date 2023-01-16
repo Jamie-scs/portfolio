@@ -5,7 +5,8 @@
 // Off Screen Menu
 
 .hamburger-menu				{
-	position: absolute;
+	display: none;
+	position: fixed;
 	top: 1rem;
 	right: 1rem;
 	z-index: 2;
@@ -21,7 +22,7 @@
 		opacity: 1;
 	}
 	@include mqm(large)	{
-		display: none;
+		display: none !important;
 	}
 }
 

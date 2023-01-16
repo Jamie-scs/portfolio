@@ -1,3 +1,6 @@
+$('.no-script').hide();
+$('.script').show();
+
 const hamMenu = document.querySelector('.hamburger-menu');
 const offScreenMenu = document.querySelector('.off-screen-menu');
 

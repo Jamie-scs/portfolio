@@ -575,7 +575,8 @@ textarea {
 
 /* line 7, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   z-index: 2;
@@ -586,15 +587,15 @@ textarea {
   padding: 1rem;
   border-radius: 0.15rem;
   transition: ease .3s; }
-  /* line 19, ../../netmatters/portfolio/scss/components/_buttons.scss */
+  /* line 20, ../../netmatters/portfolio/scss/components/_buttons.scss */
   .hamburger-menu:hover, .hamburger-menu:focus {
     opacity: 1; }
   @media screen and (min-width: 62rem) {
     /* line 7, ../../netmatters/portfolio/scss/components/_buttons.scss */
     .hamburger-menu {
-      display: none; } }
+      display: none !important; } }
 
-/* line 28, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 29, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .ham-bar {
   width: 70%;
   height: 0.25rem;
@@ -606,36 +607,36 @@ textarea {
   transform: translate(-50%, -50%);
   transition: transform .6s, opacity .8s, top .6s; }
 
-/* line 40, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 41, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .bar-top {
   top: 25%; }
 
-/* line 44, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 45, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .bar-bottom {
   top: 75%; }
 
-/* line 48, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 49, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu.active {
   border: 0.1rem solid #000;
   background-color: #0652ff;
   opacity: 1; }
 
-/* line 54, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 55, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu.active .bar-top {
   transform: translate(-50%, -50%) rotate(-495deg);
   top: 50%; }
 
-/* line 59, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 60, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu.active .bar-mid {
   transform: translate(-50%, -50%) rotate(180deg);
   opacity: 0; }
 
-/* line 64, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 65, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu.active .bar-bottom {
   transform: translate(-50%, -50%) rotate(-405deg);
   top: 50%; }
 
-/* line 71, ../../netmatters/portfolio/scss/components/_buttons.scss */
+/* line 72, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .btn {
   width: 90%;
   min-height: 2.75rem;
@@ -651,18 +652,18 @@ textarea {
     color: #ffffff;
     background-color: #0048ec; }
   @media screen and (min-width: 35rem) {
-    /* line 71, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    /* line 72, ../../netmatters/portfolio/scss/components/_buttons.scss */
     .btn {
       padding: 0.75rem 3rem; } }
   @media screen and (min-width: 48rem) {
-    /* line 71, ../../netmatters/portfolio/scss/components/_buttons.scss */
+    /* line 72, ../../netmatters/portfolio/scss/components/_buttons.scss */
     .btn {
       width: 12rem;
       border-radius: 0.75rem; } }
 
 /* line 7, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .navigation {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 2;
   display: flex;
