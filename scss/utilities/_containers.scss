@@ -10,12 +10,11 @@
 }
 
 .main-inner			{
-	max-width: 100dvw;	
+	max-width: 120rem;
 	margin: 0 auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	@include mqm(large)	{
-		max-width: 95rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
