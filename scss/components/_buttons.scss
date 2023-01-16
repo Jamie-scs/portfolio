@@ -2,19 +2,20 @@
 // Buttons
 // ========================================
 
-.menu				{
+// Off Screen Menu
+
+.hamburger-menu				{
 	position: absolute;
 	top: 1rem;
-	left: 1rem;
+	right: 1rem;
+	z-index: 2;
 	width: 2.75rem;
 	height: 2.75rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: $color-pri;
 	opacity: 0.7;
-	border-radius: 0.5rem;
-	z-index: 2;
+	padding: 1rem;
+	border-radius: 0.15rem;
+	transition: ease .3s;
 	&:hover,
 	&:focus	{
 		opacity: 1;
@@ -24,16 +25,48 @@
 	}
 }
 
-.menu-btn			{
-	text-align: center;
-	color: $white;
-	background: transparent;
-	border: none;
-	> span 				{
-		font-size: 1.83rem;
-		line-height: 2;		
-	}
+.ham-bar	{
+	width: 70%;
+	height: 0.25rem;
+	background-color: #fff;
+	border-radius: 1.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: transform .6s, opacity .8s, top .6s;
 }
+
+.bar-top	{
+	top: 25%;
+}
+
+.bar-bottom	{
+	top: 75%;
+}
+
+.hamburger-menu.active	{
+	border: 0.1rem solid #000;
+	background-color: $color-pri;
+	opacity: 1;
+}
+
+.hamburger-menu.active .bar-top	{
+	transform: translate(-50%, -50%) rotate(-495deg);
+	top: 50%;
+}
+
+.hamburger-menu.active .bar-mid	{
+	transform: translate(-50%, -50%) rotate(180deg);
+	opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom	{
+	transform: translate(-50%, -50%) rotate(-405deg);
+	top: 50%;
+}
+
+// Contact Form
 
 .btn 				{
 	width: 90%;

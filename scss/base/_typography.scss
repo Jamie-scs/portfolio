@@ -2,27 +2,107 @@
 // Typography
 // ========================================
 
+// No Script Navigation
+
+.navigation			{
+	.logo-mobile 				{
+		margin: auto;
+		font-size: 3rem;
+		font-weight: 900;
+		color: lighten($color-pri, 10%);
+		-webkit-text-fill-color: lighten($color-pri, 10%);
+		-webkit-text-stroke-width: 0.1rem;
+		-webkit-text-stroke-color: black;
+		padding: 0.5rem;
+	}
+	ul 					{
+		text-align: center;
+
+	}
+	ul a				{
+		color: $color-pri;
+		font-size: clamp(0.5rem, 3vw, 1rem);
+		font-weight: 600;
+	}
+}
+
+// Off Screen Menu Navigation
+
+.logo-mobile 				{
+	margin: auto;
+	font-size: 5rem;
+	font-weight: 900;
+	color: lighten($color-pri, 10%);
+	-webkit-text-fill-color: lighten($color-pri, 10%);
+	-webkit-text-stroke-width: 0.1rem;
+	-webkit-text-stroke-color: black;
+	padding: 1rem 0;
+}
+
+.links-mobile a 			{
+	color: $color-pri;
+	font-size: 1.1rem;
+	font-weight: 600;
+
+}
+
+
+// Logo
+
+.logo				{
+	margin: auto;
+	font-size: 5rem;
+	font-weight: 900;
+	color: lighten($color-pri, 10%);
+	-webkit-text-fill-color: lighten($color-pri, 10%);
+	-webkit-text-stroke-width: 0.1rem;
+	-webkit-text-stroke-color: black;
+	padding: 1rem 0;
+	&:hover,
+	&:focus         {
+		font-size: 5.2rem;
+		-webkit-text-fill-color: lighten($color-pri, 20%);
+		padding: 0.9rem 0;
+		text-shadow: 0 0 0.5rem $color-pri;
+	}
+}
+
+// Sidebar Navigation
+
+.links a 			{
+	@include mqx(large)	{	
+		color: $color-pri;
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 2.75rem;
+	}
+}
+
 // Hero
 
 .overlay			{
 	color: $white;
 }
 
-.overlay-h1	h1		{
+.overlay-h1	.h1		{
 	text-align: center;
-	text-shadow: -0.3rem 0.3rem 1rem $color-pri;
-	-webkit-text-fill-color: rgba($white, 0.9);
-	-webkit-text-stroke-width: 0.05rem;
+	text-shadow: -0.5rem 0.5rem 1rem $color-pri;
+	-webkit-text-fill-color:  #eee;
+	-webkit-text-stroke-width: 0.1rem;
 	-webkit-text-stroke-color: $color-pri;
 	font-size: clamp(2.4rem, 5.5vw, 4rem);
+	font-weight: 1000;
 	margin: 0;
 }
 
 .overlay-p p 		{
 	text-align: center;
-	text-shadow: -0.3rem 0.3rem 1rem $color-pri;
-	font-size: clamp(1.25rem, 2.9vw, 2rem);
-	font-weight: 400;
+	text-shadow: -0.5rem 0.5rem 1rem $color-pri;
+	-webkit-text-fill-color: #eee;
+	-webkit-text-stroke-width: 0.1rem;
+	-webkit-text-stroke-color: $color-pri;
+	font-size: clamp(1.85rem, 4vw, 3rem);
+	font-weight: 600;
 	margin: 0;
 }
 

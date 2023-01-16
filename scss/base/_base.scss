@@ -7,6 +7,7 @@ body 				{
 	letter-spacing: 0.025rem;
 	line-height: 1.5;
 	min-height: 100%;
+	background: #eee;
 }
 
 a 					{
@@ -32,8 +33,14 @@ ul {
 	}
 }
 
+.mobile 				{
+	@include mqm(large)	{
+		display: none;
+	}
+}
+
 .full 				{
-	@include mqx(small)	{
+	@include mqx(large)	{
 		display: none;
 	}
 }
