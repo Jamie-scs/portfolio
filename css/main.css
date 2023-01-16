@@ -1212,43 +1212,44 @@ textarea {
 
 /* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
 .main-inner {
-  max-width: 120rem;
+  max-width: 100dvw;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem; }
   @media screen and (min-width: 62rem) {
     /* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     .main-inner {
+      max-width: 95rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
 
-/* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+/* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
   @media screen and (min-width: 35rem) {
-    /* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     footer {
       min-height: 66.8dvh; } }
   @media screen and (min-width: 48rem) {
-    /* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     footer {
       min-height: 77.8dvh; } }
   @media screen and (min-width: 62rem) {
-    /* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     footer {
       min-height: 71.5dvh; } }
   @media screen and (min-width: 75rem) {
-    /* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     footer {
       min-height: 72dvh; } }
   @media screen and (min-width: 120rem) {
-    /* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     footer {
       min-height: 77dvh; } }
 
-/* line 46, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+/* line 47, ../../netmatters/portfolio/scss/utilities/_containers.scss */
 .footer {
   position: sticky;
   bottom: 1rem;
