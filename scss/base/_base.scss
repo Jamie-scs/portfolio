@@ -34,7 +34,6 @@ p 					{
 	font-size: clamp(0.8rem, 1.4vw, 1.125rem);
 	text-align: justify;
 	@include mqm(small)					{
-		min-width: 40ch;
 		max-width: 60ch;
 	}
 }
