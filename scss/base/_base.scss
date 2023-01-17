@@ -6,11 +6,41 @@ body 				{
 	font-family: Poppins, sans-serif;
 	letter-spacing: 0.025rem;
 	line-height: 1.5;
+	text-align: center;
 	min-height: 100%;
 	background: #eee;
 }
 
+h1					{
+	margin: 1rem 0 0;
+}
+
+h2 					{
+	font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+	margin: 0;
+}
+
+h3					{
+	font-size: clamp(1rem, 2.1vw, 1.5rem);
+	margin: 0;
+}
+
+h4					{
+	font-size: clamp(1rem, 2vw, 1.325rem);
+	margin: 0;
+}
+
+p 					{
+	font-size: clamp(0.8rem, 1.4vw, 1.125rem);
+	text-align: justify;
+	@include mqm(small)					{
+		min-width: 40ch;
+		max-width: 60ch;
+	}
+}
+
 a 					{
+	font-size: clamp(0.65rem, 1.7vw, 0.925rem);
 	text-decoration: none;
 	color: $black;
 }
@@ -21,31 +51,3 @@ ul {
 	padding: 0;
 }
 
-.small				{
-	@include mqm(small)	{
-		display: none;
-	}
-}
-
-.medium				{
-	@include mqm(medium)	{
-		display: none;
-	}
-}
-
-.mobile 				{
-	@include mqm(large)	{
-		display: none;
-	}
-}
-
-.full 				{
-	@include mqx(large)	{
-		display: none;
-	}
-}
-
-.hidden				{
-	display: none;
-	visibility: hidden;
-}

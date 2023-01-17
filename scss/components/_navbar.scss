@@ -6,7 +6,7 @@
 
 .navigation			{
 	position: fixed;
-	width: 100%;
+	width: 100dvw;
 	z-index: 2;
 	display: flex;
 	background: #eee;
@@ -15,7 +15,6 @@
 		@include b-pri(right);
 		width: 7rem;
 		height: 4rem;
-		text-align: center;
 	}
 	ul 					{
 		width: 100%;
@@ -29,13 +28,11 @@
 // Sidebar Navigation
 
 .sidebar			{
-	height: 100%;
+	height: 100dvh;
 	width: $sidebar;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
-	overflow: hidden;
 	@include b-pri(right);
 	@include mqx(large)	{
 		left: -#{$sidebar};
@@ -45,12 +42,10 @@
 .logo-container		{
 	width: 100%;
 	height: 8rem;
-	text-align: center;
 	@include b-pri(bottom);
 }
 
 .links				{
-	text-align: center;
 	padding: 2rem 0 1rem;
 	>:last-child		{
 		@include b-sec(top, bottom);
@@ -76,7 +71,6 @@
 }
 
 .social-icn				{
-	text-align: center;
 	width: 4rem;
 	height: 4rem;
 	a span					{

@@ -244,44 +244,50 @@ body {
   font-family: Poppins, sans-serif;
   letter-spacing: 0.025rem;
   line-height: 1.5;
+  text-align: center;
   min-height: 100%;
   background: #eee; }
 
-/* line 13, ../../netmatters/portfolio/scss/base/_base.scss */
+/* line 14, ../../netmatters/portfolio/scss/base/_base.scss */
+h1 {
+  margin: 1rem 0 0; }
+
+/* line 18, ../../netmatters/portfolio/scss/base/_base.scss */
+h2 {
+  font-size: clamp(1.325rem, 2.4vw, 1.925rem);
+  margin: 0; }
+
+/* line 23, ../../netmatters/portfolio/scss/base/_base.scss */
+h3 {
+  font-size: clamp(1rem, 2.1vw, 1.5rem);
+  margin: 0; }
+
+/* line 28, ../../netmatters/portfolio/scss/base/_base.scss */
+h4 {
+  font-size: clamp(1rem, 2vw, 1.325rem);
+  margin: 0; }
+
+/* line 33, ../../netmatters/portfolio/scss/base/_base.scss */
+p {
+  font-size: clamp(0.8rem, 1.4vw, 1.125rem);
+  text-align: justify; }
+  @media screen and (min-width: 35rem) {
+    /* line 33, ../../netmatters/portfolio/scss/base/_base.scss */
+    p {
+      min-width: 40ch;
+      max-width: 60ch; } }
+
+/* line 42, ../../netmatters/portfolio/scss/base/_base.scss */
 a {
+  font-size: clamp(0.65rem, 1.7vw, 0.925rem);
   text-decoration: none;
   color: #000000; }
 
-/* line 18, ../../netmatters/portfolio/scss/base/_base.scss */
+/* line 48, ../../netmatters/portfolio/scss/base/_base.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-
-@media screen and (min-width: 35rem) {
-  /* line 24, ../../netmatters/portfolio/scss/base/_base.scss */
-  .small {
-    display: none; } }
-
-@media screen and (min-width: 48rem) {
-  /* line 30, ../../netmatters/portfolio/scss/base/_base.scss */
-  .medium {
-    display: none; } }
-
-@media screen and (min-width: 62rem) {
-  /* line 36, ../../netmatters/portfolio/scss/base/_base.scss */
-  .mobile {
-    display: none; } }
-
-@media screen and (max-width: 61.9375rem) {
-  /* line 42, ../../netmatters/portfolio/scss/base/_base.scss */
-  .full {
-    display: none; } }
-
-/* line 48, ../../netmatters/portfolio/scss/base/_base.scss */
-.hidden {
-  display: none;
-  visibility: hidden; }
 
 /* line 8, ../../netmatters/portfolio/scss/base/_typography.scss */
 .navigation .logo-mobile {
@@ -295,16 +301,12 @@ ul {
   padding: 0.5rem; }
 
 /* line 18, ../../netmatters/portfolio/scss/base/_typography.scss */
-.navigation ul {
-  text-align: center; }
-
-/* line 22, ../../netmatters/portfolio/scss/base/_typography.scss */
 .navigation ul a {
   color: #0652ff;
   font-size: clamp(0.5rem, 3vw, 1rem);
   font-weight: 600; }
 
-/* line 31, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 27, ../../netmatters/portfolio/scss/base/_typography.scss */
 .logo-mobile {
   margin: auto;
   font-size: 5rem;
@@ -315,13 +317,13 @@ ul {
   -webkit-text-stroke-color: black;
   padding: 1rem 0; }
 
-/* line 42, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 38, ../../netmatters/portfolio/scss/base/_typography.scss */
 .links-mobile a {
   color: #0652ff;
   font-size: 1.1rem;
   font-weight: 600; }
 
-/* line 52, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 48, ../../netmatters/portfolio/scss/base/_typography.scss */
 .logo {
   margin: auto;
   font-size: 5rem;
@@ -331,7 +333,7 @@ ul {
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: black;
   padding: 1rem 0; }
-  /* line 61, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 57, ../../netmatters/portfolio/scss/base/_typography.scss */
   .logo:hover, .logo:focus {
     font-size: 5.2rem;
     -webkit-text-fill-color: #6c99ff;
@@ -339,164 +341,150 @@ ul {
     text-shadow: 0 0 0.5rem #0652ff; }
 
 @media screen and (max-width: 61.9375rem) {
-  /* line 72, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 68, ../../netmatters/portfolio/scss/base/_typography.scss */
   .links a {
     color: #0652ff;
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2.75rem; } }
 
-/* line 83, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 79, ../../netmatters/portfolio/scss/base/_typography.scss */
 .overlay {
   color: #ffffff; }
 
-/* line 87, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 83, ../../netmatters/portfolio/scss/base/_typography.scss */
 .overlay-h1 .h1 {
-  text-align: center;
   text-shadow: -0.5rem 0.5rem 1rem #0652ff;
   -webkit-text-fill-color: #eee;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #0652ff;
   font-size: clamp(2.4rem, 5.5vw, 4rem);
   font-weight: 1000;
+  text-align: center;
   margin: 0; }
 
-/* line 98, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 94, ../../netmatters/portfolio/scss/base/_typography.scss */
 .overlay-p p {
-  text-align: center;
   text-shadow: -0.5rem 0.5rem 1rem #0652ff;
   -webkit-text-fill-color: #eee;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #0652ff;
   font-size: clamp(1.85rem, 4vw, 3rem);
   font-weight: 600;
+  text-align: center;
   margin: 0; }
 
-/* line 109, ../../netmatters/portfolio/scss/base/_typography.scss */
-.scroll {
-  text-align: center; }
-  /* line 111, ../../netmatters/portfolio/scss/base/_typography.scss */
-  .scroll small {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #ffffff; }
+/* line 105, ../../netmatters/portfolio/scss/base/_typography.scss */
+small {
+  font-size: 0.875rem;
+  font-weight: 600; }
 
-/* line 121, ../../netmatters/portfolio/scss/base/_typography.scss */
-.item-text h3 {
-  font-size: clamp(1rem, 2.1vw, 1.5rem);
-  margin: 0; }
-
-/* line 125, ../../netmatters/portfolio/scss/base/_typography.scss */
-.item-text a {
-  font-size: clamp(0.65rem, 1.7vw, 0.925rem);
-  color: #000000; }
-
-/* line 134, ../../netmatters/portfolio/scss/base/_typography.scss */
-.contact-info h2 {
-  font-size: clamp(1.325rem, 2.4vw, 1.925rem);
-  margin-top: 0; }
-
-/* line 138, ../../netmatters/portfolio/scss/base/_typography.scss */
-.contact-info p {
-  font-size: clamp(0.85rem, 1.9vw, 1.125rem); }
-
-/* line 141, ../../netmatters/portfolio/scss/base/_typography.scss */
-.contact-info a.tel {
+/* line 118, ../../netmatters/portfolio/scss/base/_typography.scss */
+.contact-info a.tel,
+.contact-info a.email {
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-style: normal;
   font-weight: 600; }
 
-/* line 146, ../../netmatters/portfolio/scss/base/_typography.scss */
-.contact-info a.email {
-  font-style: normal;
-  font-weight: 600; }
-  @media screen and (max-width: 74.9375rem) {
-    /* line 146, ../../netmatters/portfolio/scss/base/_typography.scss */
-    .contact-info a.email {
-      font-size: clamp(0.6rem, 2vw, 1rem); } }
-  @media screen and (min-width: 75rem) {
-    /* line 146, ../../netmatters/portfolio/scss/base/_typography.scss */
-    .contact-info a.email {
-      font-size: clamp(0.6rem, 3.5vw, 1.125rem); } }
-
-/* line 160, ../../netmatters/portfolio/scss/base/_typography.scss */
-.about-header {
-  text-align: center;
-  margin: 1rem 0; }
-  /* line 163, ../../netmatters/portfolio/scss/base/_typography.scss */
-  .about-header h2 {
-    padding: 1rem 0;
-    font-size: clamp(1.325rem, 2.4vw, 1.925rem); }
-    @media screen and (min-width: 62rem) {
-      /* line 163, ../../netmatters/portfolio/scss/base/_typography.scss */
-      .about-header h2 {
-        margin: 0; } }
-
-/* line 172, ../../netmatters/portfolio/scss/base/_typography.scss */
-.about-text p {
-  font-size: clamp(0.85rem, 1.9vw, 1.125rem);
-  text-align: justify; }
-
-/* line 177, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 128, ../../netmatters/portfolio/scss/base/_typography.scss */
 .about-skills li {
   display: inline-block;
   font-size: 1.5rem;
   padding: 0 1rem; }
-  /* line 181, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 132, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.html {
     text-shadow: 0 0 0.5rem #f06529; }
-  /* line 184, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 135, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.css {
     text-shadow: 0 0 0.5rem #2965f1; }
-  /* line 187, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 138, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.sass {
     text-shadow: 0 0 0.5rem #cc6699; }
-  /* line 190, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 141, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-skills li.javascript {
+    text-shadow: 0 0 0.5rem #f0db4f; }
+  /* line 144, ../../netmatters/portfolio/scss/base/_typography.scss */
+  .about-skills li.jquery {
+    text-shadow: 0 0 0.5rem #0868ac; }
+  /* line 147, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.git {
     text-shadow: 0 0 0.5rem #f1502f; }
-  /* line 193, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 150, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.bash {
     text-shadow: 0 0 0.5rem #4eaa25; }
 
-/* line 200, ../../netmatters/portfolio/scss/base/_typography.scss */
-.coming-soon {
-  text-align: center; }
-  /* line 202, ../../netmatters/portfolio/scss/base/_typography.scss */
-  .coming-soon h2 {
-    font-weight: 900;
-    text-transform: capitalize;
-    font-size: clamp(3rem, 7vw, 7rem); }
+/* line 157, ../../netmatters/portfolio/scss/base/_typography.scss */
+.coming-soon h2 {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: clamp(3rem, 7vw, 7rem); }
 
-/* line 212, ../../netmatters/portfolio/scss/base/_typography.scss */
-.scs-container h2 {
-  font-size: clamp(1.325rem, 2.4vw, 1.925rem);
-  margin: 0 0 0.5rem; }
-
-/* line 216, ../../netmatters/portfolio/scss/base/_typography.scss */
-.scs-container h3 {
-  font-size: clamp(1.125rem, 2.2vw, 1.625rem);
-  margin: 0; }
-
-/* line 220, ../../netmatters/portfolio/scss/base/_typography.scss */
-.scs-container h4 {
-  font-size: clamp(1rem, 2vw, 1.325rem);
-  margin: 0; }
-
-/* line 224, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 166, ../../netmatters/portfolio/scss/base/_typography.scss */
 .scs-container em {
   font-size: inherit;
-  margin: 0 0 0.5rem; }
+  margin: 0.5rem 0; }
 
-/* line 228, ../../netmatters/portfolio/scss/base/_typography.scss */
-.scs-container p {
-  font-size: clamp(0.8rem, 1.4vw, 1.125rem);
-  text-align: justify;
-  margin: 0; }
-
-/* line 233, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 170, ../../netmatters/portfolio/scss/base/_typography.scss */
 .scs-container li {
   font-size: clamp(0.8rem, 1.4vw, 1.125rem);
   margin: 0; }
+
+/* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.main {
+  min-height: 100%; }
+  @media screen and (min-width: 62rem) {
+    /* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    .main {
+      margin-left: 12rem; } }
+
+/* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.main-inner {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media screen and (min-width: 62rem) {
+    /* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+    .main-inner {
+      max-width: 100rem;
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+/* line 25, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+/* line 31, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.footer {
+  position: sticky;
+  bottom: 1rem;
+  padding: 2rem 0 0.5rem; }
+
+@media screen and (min-width: 35rem) {
+  /* line 39, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+  .small {
+    display: none; } }
+
+@media screen and (min-width: 48rem) {
+  /* line 45, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+  .medium {
+    display: none; } }
+
+@media screen and (min-width: 62rem) {
+  /* line 51, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+  .mobile {
+    display: none; } }
+
+@media screen and (max-width: 61.9375rem) {
+  /* line 57, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+  .full {
+    display: none; } }
+
+/* line 63, ../../netmatters/portfolio/scss/utilities/_containers.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
 
 /* line 7, ../../netmatters/portfolio/scss/components/_img.scss */
 .hero picture > img {
@@ -605,7 +593,7 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform .6s, opacity .8s, top .6s; }
+  transition: transform .6s, opacity .6s, top .6s; }
 
 /* line 41, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .bar-top {
@@ -664,7 +652,7 @@ textarea {
 /* line 7, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .navigation {
   position: fixed;
-  width: 100%;
+  width: 100dvw;
   z-index: 2;
   display: flex;
   background: #eee;
@@ -673,9 +661,8 @@ textarea {
   .navigation div {
     border-right: 0.2rem solid #0652ff;
     width: 7rem;
-    height: 4rem;
-    text-align: center; }
-  /* line 20, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    height: 4rem; }
+  /* line 19, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .navigation ul {
     width: 100%;
     display: flex;
@@ -683,40 +670,36 @@ textarea {
     align-items: center;
     justify-content: space-evenly; }
 
-/* line 31, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 30, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .sidebar {
-  height: 100%;
+  height: 100dvh;
   width: 12rem;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  overflow: hidden;
   border-right: 0.2rem solid #0652ff; }
   @media screen and (max-width: 61.9375rem) {
-    /* line 31, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    /* line 30, ../../netmatters/portfolio/scss/components/_navbar.scss */
     .sidebar {
       left: -12rem; } }
 
-/* line 45, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 42, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .logo-container {
   width: 100%;
   height: 8rem;
-  text-align: center;
   border-bottom: 0.2rem solid #0652ff; }
 
-/* line 52, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 48, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .links {
-  text-align: center;
   padding: 2rem 0 1rem; }
-  /* line 55, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 50, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links > :last-child {
     border-top: 0.1rem solid #0652ff;
     border-bottom: 0.1rem solid #0652ff; }
-  /* line 58, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 53, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links li {
     margin: 1rem 0; }
-  /* line 61, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 56, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links li:nth-child(-n+4) > a {
     position: relative; }
     /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -735,7 +718,7 @@ textarea {
     .links li:nth-child(-n+4) > a:hover::after, .links li:nth-child(-n+4) > a:focus::after {
       transform: scaleX(1);
       transform-origin: left; }
-  /* line 65, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 60, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links a {
     transition: color 250ms ease-in 150ms;
     transition: font-weight 50ms ease-out 50ms;
@@ -746,25 +729,24 @@ textarea {
       font-size: 1.2rem;
       font-weight: 800; }
 
-/* line 71, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 66, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .social {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 2rem;
   margin: 1rem 0 0; }
 
-/* line 78, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 73, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .social-icn {
-  text-align: center;
   width: 4rem;
   height: 4rem; }
-  /* line 82, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 76, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn a span {
     font-size: 1.8rem;
     background-color: #eee;
     padding: 1rem;
     border-radius: 50%; }
-  /* line 88, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 82, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:first-child a > span {
     color: #3b5998;
     transition: background-color, color 250ms ease-in 150ms;
@@ -775,7 +757,7 @@ textarea {
       background-color: #3b5998;
       font-size: 2.5rem;
       padding: 0.25rem; }
-  /* line 92, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 86, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:nth-child(2) a > span {
     color: #0077b5;
     transition: background-color, color 250ms ease-in 150ms;
@@ -786,7 +768,7 @@ textarea {
       background-color: #0077b5;
       font-size: 2.5rem;
       padding: 0.25rem; }
-  /* line 96, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 90, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:last-child a > span {
     color: #f1502f;
     transition: background-color, color 250ms ease-in 150ms;
@@ -798,14 +780,14 @@ textarea {
       font-size: 2.5rem;
       padding: 0.25rem; }
 
-/* line 102, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 96, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-row {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 1rem;
   margin: 1rem 0; }
 
-/* line 109, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 103, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-icn img {
   width: 2.5rem; }
 
@@ -834,14 +816,12 @@ textarea {
 .logo-mobile-container {
   width: 100%;
   height: 8rem;
-  text-align: center;
   border-bottom: 0.2rem solid #0652ff; }
 
-/* line 32, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 31, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .links-mobile {
-  text-align: center;
   padding: 2rem 0 1rem; }
-  /* line 35, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 33, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile li {
     height: 2.75rem; }
 
@@ -891,6 +871,7 @@ textarea {
   padding-bottom: 1rem; }
   /* line 51, ../../netmatters/portfolio/scss/layout/_home.scss */
   .scroll a small {
+    color: #ffffff;
     background: linear-gradient(0deg, rgba(6, 82, 255, 0) 0%, rgba(6, 82, 255, 0.25) 15%, rgba(6, 82, 255, 0.75) 25%, rgba(6, 82, 255, 0.5) 75%, rgba(6, 82, 255, 0.25) 85%, rgba(6, 82, 255, 0) 100%); }
 
 /* line 5, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
@@ -956,7 +937,8 @@ textarea {
 
 /* line 39, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
 .item-text {
-  padding: 0 0.5rem 0.5rem; }
+  padding: 0 0.5rem 0.5rem;
+  text-align: left; }
   @media screen and (max-width: 47.9375rem) {
     /* line 39, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
     .item-text {
@@ -973,10 +955,6 @@ textarea {
   background: #cccccc;
   padding: 1rem;
   border-radius: 1rem; }
-  @media screen and (max-width: 47.9375rem) {
-    /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
-    .contact-container {
-      text-align: center; } }
   @media screen and (min-width: 35rem) {
     /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
     .contact-container {
@@ -998,68 +976,69 @@ textarea {
     .contact-container {
       grid-template-columns: 2fr 3fr; } }
 
-/* line 33, ../../netmatters/portfolio/scss/layout/_contact.scss */
-.contact-info .tel {
-  position: relative;
-  transition: color 250ms ease-in 150ms;
-  transition: font-weight 50ms ease-out 50ms;
-  transition: font-size 50ms ease-out 50ms; }
-  /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .tel::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0rem;
-    width: 100%;
-    height: 0.1rem;
-    background-color: #0652ff;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-in-out; }
-  /* line 55, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .tel:hover::after, .contact-info .tel:focus::after {
-    transform: scaleX(1);
-    transform-origin: left; }
-  /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .tel:hover, .contact-info .tel:focus {
-    color: #0652ff;
-    font-size: 1.5rem;
-    font-weight: 800; }
-
-/* line 38, ../../netmatters/portfolio/scss/layout/_contact.scss */
-.contact-info .email {
-  position: relative;
-  transition: color 250ms ease-in 150ms;
-  transition: font-weight 50ms ease-out 50ms;
-  transition: font-size 50ms ease-out 50ms; }
-  /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .email::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.1rem;
-    width: 100%;
-    height: 0.1rem;
-    background-color: #0652ff;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-in-out; }
-  /* line 55, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .email:hover::after, .contact-info .email:focus::after {
-    transform: scaleX(1);
-    transform-origin: left; }
-  /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  .contact-info .email:hover, .contact-info .email:focus {
-    color: #0652ff;
-    font-size: 1.125rem;
-    font-weight: 800; }
+/* line 29, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.contact-info {
+  max-width: 45ch; }
+  /* line 31, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .contact-info .tel {
+    position: relative;
+    transition: color 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 55, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel:hover::after, .contact-info .tel:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+    /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .tel:hover, .contact-info .tel:focus {
+      color: #0652ff;
+      font-size: 1.5rem;
+      font-weight: 800; }
+  /* line 36, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .contact-info .email {
+    position: relative;
+    transition: color 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.1rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 55, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email:hover::after, .contact-info .email:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+    /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .contact-info .email:hover, .contact-info .email:focus {
+      color: #0652ff;
+      font-size: 1.125rem;
+      font-weight: 800; }
 
 /* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
   @media screen and (min-width: 62rem) {
     /* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
     .about-container {
@@ -1073,20 +1052,20 @@ textarea {
     .about-container {
       justify-content: space-around; } }
 
-/* line 22, ../../netmatters/portfolio/scss/layout/_about.scss */
+/* line 21, ../../netmatters/portfolio/scss/layout/_about.scss */
 .avatar {
   margin-top: 0; }
   @media screen and (min-width: 35rem) {
-    /* line 22, ../../netmatters/portfolio/scss/layout/_about.scss */
+    /* line 21, ../../netmatters/portfolio/scss/layout/_about.scss */
     .avatar {
       margin: 2rem 0 2rem; } }
 
-/* line 29, ../../netmatters/portfolio/scss/layout/_about.scss */
+/* line 28, ../../netmatters/portfolio/scss/layout/_about.scss */
 .about-text {
   max-width: 60ch;
   margin-bottom: 1rem; }
   @media screen and (min-width: 62rem) {
-    /* line 29, ../../netmatters/portfolio/scss/layout/_about.scss */
+    /* line 28, ../../netmatters/portfolio/scss/layout/_about.scss */
     .about-text {
       padding-left: 1rem;
       margin-bottom: 1rem; } }
@@ -1102,17 +1081,15 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
-  text-align: center; }
+  padding: 1rem 0; }
   @media screen and (min-width: 62rem) {
     /* line 5, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
     .scs-container {
       display: grid;
       grid-template-areas: ". . header header header header header header . ." ". main main main main main main-logo main-logo . ." ". . footer-logo footer-logo footer footer footer footer footer .";
-      align-items: start;
-      padding: 2rem 0; } }
+      align-items: start; } }
 
-/* line 24, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 22, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .scs-item article {
   display: flex;
   flex-direction: column;
@@ -1123,26 +1100,20 @@ textarea {
   box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   margin: 1rem 0; }
 
-@media screen and (min-width: 35rem) {
-  /* line 35, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
-  .scs-item p {
-    min-width: 40ch;
-    max-width: 60ch; } }
-
-/* line 42, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 34, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .scion {
   grid-area: header; }
-  /* line 44, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 36, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .scion article {
     background-color: #6c99ff; }
 
-/* line 49, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 41, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .treehouse {
   grid-area: main; }
-  /* line 51, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 43, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .treehouse article {
     background-color: #54d98c; }
-  /* line 54, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 46, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .treehouse h4 > a {
     position: relative;
     transition: color 250ms ease-in 150ms;
@@ -1170,90 +1141,36 @@ textarea {
       font-size: 1.125rem;
       font-weight: 800; }
 
-/* line 61, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 53, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .logo1 {
   grid-area: main-logo; }
-  /* line 63, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 55, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .logo1 img {
     width: 100%; }
     @media screen and (min-width: 62rem) {
-      /* line 63, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+      /* line 55, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
       .logo1 img {
         width: 80%;
         margin: 3rem 0 0 3rem; } }
 
-/* line 72, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 64, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .logo2 {
   grid-area: footer-logo; }
-  /* line 74, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 66, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .logo2 img {
     width: 45%;
     border-radius: 50%; }
     @media screen and (min-width: 62rem) {
-      /* line 74, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+      /* line 66, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
       .logo2 img {
         width: 65%;
         margin: 3rem 3rem 0 0; } }
 
-/* line 84, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+/* line 76, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
 .netmatters {
   grid-area: footer; }
-  /* line 86, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
+  /* line 78, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .netmatters article {
     background-color: #b8a1cc; }
-
-/* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-.main {
-  min-height: 100%; }
-  @media screen and (min-width: 62rem) {
-    /* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    .main {
-      margin-left: 12rem; } }
-
-/* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-.main-inner {
-  max-width: 100dvw;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  @media screen and (min-width: 62rem) {
-    /* line 12, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    .main-inner {
-      max-width: 95rem;
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-
-/* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; }
-  @media screen and (min-width: 35rem) {
-    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    footer {
-      min-height: 66.8dvh; } }
-  @media screen and (min-width: 48rem) {
-    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    footer {
-      min-height: 77.8dvh; } }
-  @media screen and (min-width: 62rem) {
-    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    footer {
-      min-height: 71.5dvh; } }
-  @media screen and (min-width: 75rem) {
-    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    footer {
-      min-height: 72dvh; } }
-  @media screen and (min-width: 120rem) {
-    /* line 26, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-    footer {
-      min-height: 77dvh; } }
-
-/* line 47, ../../netmatters/portfolio/scss/utilities/_containers.scss */
-.footer {
-  position: sticky;
-  bottom: 1rem;
-  text-align: center;
-  padding: 2rem 0 0.5rem; }
 
 /*# sourceMappingURL=main.css.map */

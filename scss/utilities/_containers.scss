@@ -10,12 +10,11 @@
 }
 
 .main-inner			{
-	max-width: 100dvw;	
 	margin: 0 auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	@include mqm(large)	{
-		max-width: 95rem;
+		max-width: 100rem;	
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -27,26 +26,41 @@ footer 				{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	@include mqm(small)	{
-		min-height: 66.8dvh;
-	}
-	@include mqm(medium)	{
-		min-height: 77.8dvh;
-	}
-	@include mqm(large)	{
-		min-height: 71.5dvh;
-	}
-	@include mqm(x-large)	{
-		min-height: 72dvh;
-	}
-	@include mqm(xx-large)	{
-		min-height: 77dvh;
-	}
 }
 
 .footer 			{
 	position: sticky;
 	bottom: 1rem;
-	text-align: center;
 	padding: 2rem 0 0.5rem;
+}
+
+// Display
+
+.small				{
+	@include mqm(small)	{
+		display: none;
+	}
+}
+
+.medium				{
+	@include mqm(medium)	{
+		display: none;
+	}
+}
+
+.mobile 				{
+	@include mqm(large)	{
+		display: none;
+	}
+}
+
+.full 				{
+	@include mqx(large)	{
+		display: none;
+	}
+}
+
+.hidden				{
+	display: none;
+	visibility: hidden;
 }

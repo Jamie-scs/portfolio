@@ -8,9 +8,6 @@
 	background: $search;
 	padding: 1rem;
 	border-radius: 1rem;
-	@include mqx(medium)	{
-		text-align: center;
-	}
 	@include mqm(small)	{
 		margin: 2rem 0 0;
 	}
@@ -30,6 +27,7 @@
 }
 
 .contact-info		{
+	max-width: 45ch;
 	.tel				{
 		position: relative;
 		@include fancy-line(0rem);
@@ -37,7 +35,7 @@
 	}
 	.email				{
 		position: relative;
-		@include fancy-line(-.1rem);
+		@include fancy-line(-0.1rem);
 		@include fancy-text(1.125rem);
 	}
 }

@@ -38,6 +38,7 @@
 
 .item-text				{
 	padding: 0 0.5rem 0.5rem;
+	text-align: left;
 	@include mqx(medium)	{
 		display: flex;
 		justify-content: space-between;
