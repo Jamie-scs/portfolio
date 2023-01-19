@@ -15,7 +15,7 @@ $.fn.typewriter = function(options) {
 		$(this).addClass('typeAction');
 
 		// Clears text in the user selected element
-		$(this).text('').delay(2000);
+		$(this).text('');
 		
 		// Adds static cursor to user selected element
 		if (settings.cursorVisible === true) {

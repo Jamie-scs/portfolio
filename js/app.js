@@ -42,10 +42,10 @@ const errMsg	=
 	notEmail		: " given is not a valid email"
 }
 
-let regExpAN	= new RegExp(/^[\w ]+$/),
-	regExpTx	= new RegExp(/^[a-zA-Z ]+$/),
-	regExpMsg	= new RegExp(/^[a-zA-Z\s]+$/),
-	regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+const regExpAN	= new RegExp(/^[\w ]+$/),
+	  regExpTx	= new RegExp(/^[a-zA-Z ]+$/),
+	  regExpMsg	= new RegExp(/^[a-zA-Z\s]+$/),
+	  regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
 let validate	= (id, index) => {
 	let val = id.value.trim();
