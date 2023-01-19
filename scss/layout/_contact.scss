@@ -5,6 +5,7 @@
 .contact-container	{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	background: $search;
 	padding: 1rem;
 	border-radius: 1rem;
@@ -13,8 +14,9 @@
 	}
 	@include mqm(medium)	{
 		display: grid;
+		align-items: start;
 		grid-template-columns: 3.5fr 4fr;
-		gap: 1rem;
+		gap: 2rem;
 		padding: 1.5rem;
 	}
 	@include mqm(large)		{
@@ -26,8 +28,18 @@
 	}
 }
 
+.info-container		{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
 .contact-info		{
 	max-width: 45ch;
+	@include mqm(x-large){
+		justify-self: center;
+	}
 	.tel				{
 		position: relative;
 		@include fancy-line(0rem);
@@ -38,4 +50,22 @@
 		@include fancy-line(-0.1rem);
 		@include fancy-text(1.125rem);
 	}
+}
+
+.notice				{
+	padding: 0.5rem;
+	border: 0.2rem solid $color-pri;
+	border-radius: 1rem 1rem 0 1rem;
+	box-shadow: 0.4rem 0.625rem;
+	margin: -1rem 0 1.625rem;
+	strong			{
+		font-size: 0.875rem;
+	}
+	em 					{
+		text-decoration: underline;
+	}
+}
+
+.contact-form	{
+	width: 100%;
 }

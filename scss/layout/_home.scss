@@ -60,3 +60,29 @@
 			rgba(6,82,255,0.0) 100%);
 	}
 }
+
+// Typewriter Styles
+
+#cursor 			{
+	-webkit-text-fill-color: $color-pri;
+	-webkit-text-stroke-width: 0.1rem;
+	-webkit-text-stroke-color: $black;
+	font-size: clamp(2.4rem, 5.5vw, 4rem);
+	font-weight: 200;
+	margin-left: 0.01ch;
+}
+/* Class that will eventually be removed to letters in the for loop*/
+.typeAction {
+	visibility:hidden;
+
+
+/*Below targets the cursor's animation & colour*/
+span {
+	padding-left:1px;
+	animation: blink 700ms steps(1) infinite;
+  -webkit-animation: blink 700ms steps(1) infinite;
+}
+
+	@keyframes blink { 50% { color: transparent; } }
+	@-webkit-keyframes blink { 50% { color: transparent; } }
+}

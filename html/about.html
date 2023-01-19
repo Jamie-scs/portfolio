@@ -139,19 +139,22 @@
 				<div class="stack-icn">
 					<img src="../img/sass.svg" alt="SaSS Logo">
 				</div><!-- stack-icn -->
-				<div class="stack-icn hidden">
+				<div class="stack-icn">
 					<img src="../img/javascript.svg" alt="JavaScript Logo">
 				</div><!-- stack-icn -->
 			</div><!-- stack-row -->
 			<div class="stack-row">
+				<div class="stack-icn">
+					<img src="../img/jquery.svg" alt="jQuery Logo">
+				</div><!-- stack-icn -->
 				<div class="stack-icn hidden">
 					<img src="../img/mysql.svg" alt="MySQL Logo">
 				</div><!-- stack-icn -->
+			</div><!-- stack-row -->
+			<div class="stack-row">
 				<div class="stack-icn hidden">
 					<img src="../img/php.svg" alt="PHP Logo">
 				</div><!-- stack-icn -->
-			</div><!-- stack-row -->
-			<div class="stack-row">
 				<div class="stack-icn hidden">
 					<img src="../img/react.svg" alt="React Logo">
 				</div>
@@ -233,32 +236,63 @@
 	
 				<section id="contact">
 					<div class="contact-container">
-						<div class="contact-info">
-							<h2>Get In Touch</h2>
-							<p>Send me a message or an email for more information. Please call if your enquiry is urgent.</p>
-							<address>
-								<a href="tel:07542103797" class="tel">07542 103 797</a>
+						<div class="info-container">
+							<div class="contact-info">
+								<h2>Get In Touch</h2>
+								<p>Send me a message or an email for more information. Please call if your enquiry is urgent.</p>
+								<address>
+									<a href="tel:07542103797" class="tel">07542 103 797</a>
+									<br>
+									<a href="mailto:j.a.e.cosham@gmail.com" class="email">j.a.e.cosham@gmail.com</a>
+								</address>
+								<p>Please make your messages as detailed as possible to better help me understand your needs. I will respond to all messages promptly, when I am free to do so. Please only call me if your enquiry is urgent.</p>
 								<br>
-								<a href="mailto:j.a.e.cosham@gmail.com" class="email">j.a.e.cosham@gmail.com</a>
-							</address>
-							<p>Please make your messages as detailed as possible to better help me understand your needs. I will respond to all messages promptly, when I am free to do so. Please only call me if your enquiry is urgent.</p>
-						</div><!-- contact-info -->
+							</div><!-- contact-info -->
+							<div class="contact-notice">
+								<p class="notice"><strong>This form is currently <em>under construction</em> and does not go anywhere yet. Please use the <em>Telephone</em> or <em>Email</em> links above if you wish to contact me.</strong></p>
+							</div>
+						</div>
 						<div class="contact-form">
-							<form action="#" method="post">
+							<form id="form" action="#" method="post">
 								<div class="form-group">
-									<label for="name" class="hidden">First Name:</label>
-									<input type="text" id="name" name="name" class="form-control" placeholder="First Name*" required>
-									<label for="surname" class="hidden">Last Name:</label>
-									<input type="text" id="surname" name="surname" class="form-control" placeholder="Last Name*" required>
+									<div class="form-input">
+										<label for="name">First Name:</label>
+										<input type="text" id="name" name="name" class="form-control" placeholder="required">
+										<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+										<span class="validate-icn far fa-check-circle success-icon"></span>
+										<div class="error"></div>
+									</div>
+									<div class="form-input">
+										<label for="surname">Last Name:</label>
+										<input type="text" id="surname" name="surname" class="form-control" placeholder="required">
+										<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+										<span class="validate-icn far fa-check-circle success-icon"></span>
+										<div class="error"></div>
+									</div>
 								</div>
-								<label for="email" class="hidden">Email Address:</label>
-								<input type="email" id="email" name="email" class="form-control" placeholder="Email Address*" required>
-								<label for="subject" class="hidden">Subject:</label>
-								<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
-								<label for="message" class="hidden">Message:</label>
-								<textarea id="message" name="message" class="form-control" placeholder="Message"></textarea>
+								<div class="form-input">
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" class="form-control" placeholder="required">
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
+								<div class="form-input">
+									<label for="subject">Subject:</label>
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="required">
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
+								<div class="form-input">
+									<label for="message">Message:</label>
+									<textarea id="message" name="message" class="form-control" rows="6" placeholder="required"></textarea>
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
 								<div class="btn-group">
-									<button type="submit" class="btn">Submit</button>
+									<button type="submit" id="btn-submit" class="btn">Submit</button>
 								</div>
 							</form>
 						</div><!-- contact-form -->

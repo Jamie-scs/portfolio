@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<script src="https://kit.fontawesome.com/239888be0f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="js/jquery/animsition/css/animsition.min.css">
+    <!-- <link rel="stylesheet" href="js/jquery/typewriter/style.css"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,8 +175,8 @@
 				<div class="overlay-container">
 					<div class="overlay">
 						<div class="overlay-h1">
-							<p class="h1">Hello,</p>
-							<p class="h1">My name is <br class="medium">Jamie..</p>
+							<p class="h1 hello">Hello, </p>
+							<p class="h1 name">My name is Jamie..</p>
 						</div><!-- overlay-h1 -->
 						<div class="overlay-content">
 							<div class="overlay-p">
@@ -270,32 +271,63 @@
 	
 				<section id="contact">
 					<div class="contact-container">
-						<div class="contact-info">
-							<h2>Get In Touch</h2>
-							<p>Send me a message or an email for more information. Please call if your enquiry is urgent.</p>
-							<address>
-								<a href="tel:07542103797" class="tel">07542 103 797</a>
+						<div class="info-container">
+							<div class="contact-info">
+								<h2>Get In Touch</h2>
+								<p>Send me a message or an email for more information. Please call if your enquiry is urgent.</p>
+								<address>
+									<a href="tel:07542103797" class="tel">07542 103 797</a>
+									<br>
+									<a href="mailto:j.a.e.cosham@gmail.com" class="email">j.a.e.cosham@gmail.com</a>
+								</address>
+								<p>Please make your messages as detailed as possible to better help me understand your needs. I will respond to all messages promptly, when I am free to do so. Please only call me if your enquiry is urgent.</p>
 								<br>
-								<a href="mailto:j.a.e.cosham@gmail.com" class="email">j.a.e.cosham@gmail.com</a>
-							</address>
-							<p>Please make your messages as detailed as possible to better help me understand your needs. I will respond to all messages promptly, when I am free to do so. Please only call me if your enquiry is urgent.</p>
-						</div><!-- contact-info -->
+							</div><!-- contact-info -->
+							<div class="contact-notice">
+								<p class="notice"><strong>This form is currently <em>under construction</em> and does not go anywhere yet. Please use the <em>Telephone</em> or <em>Email</em> links above if you wish to contact me.</strong></p>
+							</div>
+						</div>
 						<div class="contact-form">
-							<form action="#" method="post">
+							<form id="form" action="#" method="post">
 								<div class="form-group">
-									<label for="name" class="hidden">First Name:</label>
-									<input type="text" id="name" name="name" class="form-control" placeholder="First Name*" required>
-									<label for="surname" class="hidden">Last Name:</label>
-									<input type="text" id="surname" name="surname" class="form-control" placeholder="Last Name*" required>
+									<div class="form-input">
+										<label for="name">First Name:</label>
+										<input type="text" id="name" name="name" class="form-control" placeholder="required">
+										<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+										<span class="validate-icn far fa-check-circle success-icon"></span>
+										<div class="error"></div>
+									</div>
+									<div class="form-input">
+										<label for="surname">Last Name:</label>
+										<input type="text" id="surname" name="surname" class="form-control" placeholder="required">
+										<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+										<span class="validate-icn far fa-check-circle success-icon"></span>
+										<div class="error"></div>
+									</div>
 								</div>
-								<label for="email" class="hidden">Email Address:</label>
-								<input type="email" id="email" name="email" class="form-control" placeholder="Email Address*" required>
-								<label for="subject" class="hidden">Subject:</label>
-								<input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
-								<label for="message" class="hidden">Message:</label>
-								<textarea id="message" name="message" class="form-control" placeholder="Message"></textarea>
+								<div class="form-input">
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" class="form-control" placeholder="required">
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
+								<div class="form-input">
+									<label for="subject">Subject:</label>
+									<input type="text" id="subject" name="subject" class="form-control" placeholder="required">
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
+								<div class="form-input">
+									<label for="message">Message:</label>
+									<textarea id="message" name="message" class="form-control" rows="6" placeholder="required"></textarea>
+									<span class="validate-icn fas fa-exclamation-circle failure-icon"></span>
+									<span class="validate-icn far fa-check-circle success-icon"></span>
+									<div class="error"></div>
+								</div>
 								<div class="btn-group">
-									<button type="submit" class="btn">Submit</button>
+									<button type="submit" id="btn-submit" class="btn">Submit</button>
 								</div>
 							</form>
 						</div><!-- contact-form -->
@@ -317,7 +349,9 @@
 
 		</div><!-- main-inner -->
 	</div><!-- main -->
+<audio class="sound" src="js/jquery/typewriter/typewriter.wav"></audio>
 <script src="js/jquery/jquery-3.6.3.min.js"></script>
+<script src="js/jquery/typewriter/jquery.typewriter.js"></script>
 <script src="js/jquery/animsition/js/animsition.min.js"></script>
 <script src="js/app.js"></script>
 </body>

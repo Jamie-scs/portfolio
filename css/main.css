@@ -465,23 +465,29 @@ small {
 .scroll span {
   color: #ffffff; }
 
+/* line 5, ../../netmatters/portfolio/scss/components/_forms.scss */
+label {
+  display: block;
+  text-align: left;
+  margin: 0.625rem 0 0.2rem; }
+
 @media screen and (min-width: 62rem) {
-  /* line 5, ../../netmatters/portfolio/scss/components/_forms.scss */
+  /* line 11, ../../netmatters/portfolio/scss/components/_forms.scss */
   .form-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem; } }
 
-/* line 13, ../../netmatters/portfolio/scss/components/_forms.scss */
+/* line 19, ../../netmatters/portfolio/scss/components/_forms.scss */
 .form-control {
   width: 100%;
   min-height: 2.75rem;
   background-color: #dddddd;
-  padding-left: 1rem;
+  padding: 0.3rem 2.5rem 0.3rem 1rem;
   border: none;
   border-color: transparent;
   border-radius: 0.35rem;
-  margin: 0 0 1rem;
+  margin: 0;
   position: relative;
   top: 0;
   transition: 500ms ease; }
@@ -495,15 +501,45 @@ small {
     border: 0.05rem solid #0652ff;
     background-color: #f7f7f7; }
 
-/* line 26, ../../netmatters/portfolio/scss/components/_forms.scss */
+/* line 32, ../../netmatters/portfolio/scss/components/_forms.scss */
 textarea {
   resize: vertical; }
 
 @media screen and (min-width: 48rem) {
-  /* line 30, ../../netmatters/portfolio/scss/components/_forms.scss */
+  /* line 36, ../../netmatters/portfolio/scss/components/_forms.scss */
   .btn-group {
     display: flex;
     justify-content: flex-end; } }
+
+/* line 45, ../../netmatters/portfolio/scss/components/_forms.scss */
+.form-input {
+  position: relative; }
+
+/* line 49, ../../netmatters/portfolio/scss/components/_forms.scss */
+.validate-icn {
+  position: absolute;
+  top: 2.65rem;
+  right: 0.8rem;
+  background: transparent; }
+
+/* line 56, ../../netmatters/portfolio/scss/components/_forms.scss */
+.error {
+  font-size: 0.925rem;
+  margin: 0 0 0.2rem; }
+
+/* line 61, ../../netmatters/portfolio/scss/components/_forms.scss */
+.success-icon {
+  color: green; }
+
+/* line 65, ../../netmatters/portfolio/scss/components/_forms.scss */
+.error,
+.failure-icon {
+  color: red; }
+
+/* line 70, ../../netmatters/portfolio/scss/components/_forms.scss */
+.success-icon,
+.failure-icon {
+  opacity: 0; }
 
 /* line 7, ../../netmatters/portfolio/scss/components/_buttons.scss */
 .hamburger-menu {
@@ -577,7 +613,8 @@ textarea {
   background-color: #3975ff;
   padding: 0.75rem 1.75rem;
   border: none;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  margin: 1rem 0 0; }
   /* line 137, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
   .btn:hover, .btn:focus {
     text-decoration: none;
@@ -805,6 +842,34 @@ textarea {
     color: #ffffff;
     background: linear-gradient(0deg, rgba(6, 82, 255, 0) 0%, rgba(6, 82, 255, 0.25) 15%, rgba(6, 82, 255, 0.75) 25%, rgba(6, 82, 255, 0.5) 75%, rgba(6, 82, 255, 0.25) 85%, rgba(6, 82, 255, 0) 100%); }
 
+/* line 66, ../../netmatters/portfolio/scss/layout/_home.scss */
+#cursor {
+  -webkit-text-fill-color: #0652ff;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #000000;
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 200;
+  margin-left: 0.01ch; }
+
+/* Class that will eventually be removed to letters in the for loop*/
+/* line 75, ../../netmatters/portfolio/scss/layout/_home.scss */
+.typeAction {
+  visibility: hidden;
+  /*Below targets the cursor's animation & colour*/ }
+  /* line 80, ../../netmatters/portfolio/scss/layout/_home.scss */
+  .typeAction span {
+    padding-left: 1px;
+    animation: blink 700ms steps(1) infinite;
+    -webkit-animation: blink 700ms steps(1) infinite; }
+
+@keyframes blink {
+  50% {
+    color: transparent; } }
+
+@-webkit-keyframes blink {
+  50% {
+    color: transparent; } }
+
 /* line 5, ../../netmatters/portfolio/scss/layout/_portfolio.scss */
 .portfolio-container {
   padding: 1rem 0 0; }
@@ -883,6 +948,7 @@ textarea {
 .contact-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #cccccc;
   padding: 1rem;
   border-radius: 1rem; }
@@ -894,8 +960,9 @@ textarea {
     /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
     .contact-container {
       display: grid;
+      align-items: start;
       grid-template-columns: 3.5fr 4fr;
-      gap: 1rem;
+      gap: 2rem;
       padding: 1.5rem; } }
   @media screen and (min-width: 62rem) {
     /* line 5, ../../netmatters/portfolio/scss/layout/_contact.scss */
@@ -907,10 +974,21 @@ textarea {
     .contact-container {
       grid-template-columns: 2fr 3fr; } }
 
-/* line 29, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 31, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; }
+
+/* line 38, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info {
   max-width: 45ch; }
-  /* line 31, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  @media screen and (min-width: 75rem) {
+    /* line 38, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-info {
+      justify-self: center; } }
+  /* line 43, ../../netmatters/portfolio/scss/layout/_contact.scss */
   .contact-info .tel {
     position: relative;
     transition: color 250ms ease-in 150ms;
@@ -937,7 +1015,7 @@ textarea {
       color: #0652ff;
       font-size: 1.5rem;
       font-weight: 800; }
-  /* line 36, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  /* line 48, ../../netmatters/portfolio/scss/layout/_contact.scss */
   .contact-info .email {
     position: relative;
     transition: color 250ms ease-in 150ms;
@@ -964,6 +1042,24 @@ textarea {
       color: #0652ff;
       font-size: 1.125rem;
       font-weight: 800; }
+
+/* line 55, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.notice {
+  padding: 0.5rem;
+  border: 0.2rem solid #0652ff;
+  border-radius: 1rem 1rem 0 1rem;
+  box-shadow: 0.4rem 0.625rem;
+  margin: -1rem 0 1.625rem; }
+  /* line 61, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .notice strong {
+    font-size: 0.875rem; }
+  /* line 64, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  .notice em {
+    text-decoration: underline; }
+
+/* line 69, ../../netmatters/portfolio/scss/layout/_contact.scss */
+.contact-form {
+  width: 100%; }
 
 /* line 5, ../../netmatters/portfolio/scss/layout/_about.scss */
 .about-container {
