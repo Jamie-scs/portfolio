@@ -12,31 +12,91 @@ $('.script').show();
 
 // Form Validation
 
-let form = document.getElementById("form"),
-	firstName = document.getElementById("name"),
-	surname	= document.getElementById("surname"),
-	email = document.getElementById("email"),
-	subject	= document.getElementById("subject"),
-	message	= document.getElementById("message"),
-	errorMsg = document.getElementsByClassName("error"),
-	successIcon = document.getElementsByClassName("success-icon"),
-	failureIcon = document.getElementsByClassName("failure-icon");
-	
-form.addEventListener('submit', (e) => {
-	e.preventDefault();
-	hasContent(firstName, 0, "First Name cannot be blank");
-	hasContent(surname, 1, "Last Name cannot be blank");
-	hasContent(email, 2, "Email cannot be blank");
-	hasContent(subject, 3, "Subject cannot be blank");
-	hasContent(message, 4, "Message cannot be blank");
-});
+let form		= document.getElementById("form"),
+	firstName	= document.getElementById("name"),
+	surname		= document.getElementById("surname"),
+	email		= document.getElementById("email"),
+	subject		= document.getElementById("subject"),
+	message		= document.getElementById("message"),
+	errorMsg	= document.getElementsByClassName("error"),
+	successIcon	= document.getElementsByClassName("success-icon"),
+	failureIcon	= document.getElementsByClassName("failure-icon");
 
-let hasContent = (id, index, error) => {
-	if (id.value.trim() === "")	{
-		errorMsg[index].innerHTML = error;
+const indexMsg	=
+	[
+ 	"First Name",
+ 	"Last Name",
+ 	"Email",
+ 	"Subject",
+ 	"Message"
+]
+
+const errMsg	=
+	{
+	noContent		: " is required",
+	hasInvalid		: " contains invalid characters",
+	nameIsShort		: " is too short, min 2 characters",
+	subIsShort		: " is too short, min 4 characters",
+	msgIsShort		: " is too short, min 20 characters",
+	isLong			: " is too long, max 254 characters",
+	notEmail		: " given is not a valid email"
+}
+
+let regExpAN	= new RegExp(/^[\w ]+$/),
+	regExpTx	= new RegExp(/^[a-zA-Z ]+$/),
+	regExpMsg	= new RegExp(/^[a-zA-Z\s]+$/),
+	regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+
+let validate	= (id, index) => {
+	let val = id.value.trim();
+	let fail = () => {
 	    id.style.border = "2px solid red";
 	    failureIcon[index].style.opacity = "1";
 	    successIcon[index].style.opacity = "0";
+	};
+	if (val === "")	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.noContent;
+		fail();
+	    return;
+	}
+	if (!val.match(regExpTx) && id !== email && id !== message)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.hasInvalid;
+	    fail();
+	    return;
+	}
+	if (val.length < 2 && id === firstName)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.nameIsShort;
+	    fail();
+	    return;
+	}
+	if (val.length < 2 && id === surname)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.nameIsShort;
+	    fail();
+	    return;
+	}
+	if (!val.match(regExpEm) && id === email)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.notEmail;
+	    fail();
+	    return;
+	}
+	if (val.length < 4 && id === subject)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.subIsShort;
+	    fail();
+	    return;
+	}
+	if (!val.match(regExpMsg) && id === message)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.hasInvalid;
+	    fail();
+	    return;
+	}
+	if (val.length < 20 && id === message)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.msgIsShort;
+	    fail();
+	    return;
+	}
+	if (val.length > 254)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.isLong;
+	    fail();
 	    return;
 	}
 	errorMsg[index].innerHTML = "";
@@ -45,14 +105,23 @@ let hasContent = (id, index, error) => {
     successIcon[index].style.opacity = "1";
 };
 
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	validate(firstName, 0);
+	validate(surname, 1);
+	validate(email, 2);
+	validate(subject, 3);
+	validate(message, 4);
+});
+
 // Off Screen Menu
 
-const	hamMenu			= document.querySelector('.hamburger-menu'),
-		offScreenMenu	= document.querySelector('.off-screen-menu');
+const hamMenu	= document.querySelector('.hamburger-menu'),
+	  offScreen	= document.querySelector('.off-screen-menu');
 
 hamMenu.addEventListener('click', () => {
 	hamMenu.classList.toggle('active');
-	offScreenMenu.classList.toggle('active');
+	offScreen.classList.toggle('active');
 });
 
 // Hide Menu On Link Click

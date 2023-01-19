@@ -15,7 +15,7 @@ $.fn.typewriter = function(options) {
 		$(this).addClass('typeAction');
 
 		// Clears text in the user selected element
-		$(this).text('');
+		$(this).text('').delay(2000);
 		
 		// Adds static cursor to user selected element
 		if (settings.cursorVisible === true) {
@@ -50,7 +50,7 @@ $.fn.typewriter = function(options) {
 
 			if (settings.randomTypeSpeed) {
 			// Defines a random time interval
-			var randTime = (Math.random() * 500); // 5 seconds in milliseconds
+			var randTime = (Math.random() * 250); // 5 seconds in milliseconds
 			} else {
 				var randTime = 0;
 			}
@@ -75,9 +75,9 @@ $.fn.typewriter = function(options) {
 					if (position > elementLength) {
 						// Shut it down
 						clearInterval(type);
+						$('#cursor').remove();
 					}
 				}, randTime);
 
-		},500); // ends setInterval
-
+		},250); // ends setInterval
 };  // ends fn.typewriter
