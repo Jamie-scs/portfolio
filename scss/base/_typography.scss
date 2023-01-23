@@ -96,7 +96,7 @@
 	margin: 0;
 }
 
-small				{
+a > small				{
 	font-size: 0.875rem;
 	font-weight: 600;
 	@include fancy-text(1.2rem);

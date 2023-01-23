@@ -379,14 +379,14 @@ small {
   margin: 0; }
 
 /* line 99, ../../netmatters/portfolio/scss/base/_typography.scss */
-small {
+a > small {
   font-size: 0.875rem;
   font-weight: 600;
   transition: #0652ff 250ms ease-in 150ms;
   transition: font-weight 50ms ease-out 50ms;
   transition: font-size 50ms ease-out 50ms; }
   /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
-  small:hover, small:focus {
+  a > small:hover, a > small:focus {
     color: #0652ff;
     font-size: 1.2rem;
     font-weight: 800; }
