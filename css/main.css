@@ -557,7 +557,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  min-height: 40rem; }
+  min-height: 42rem; }
 
 @media screen and (min-width: 48rem) {
   /* line 35, ../../netmatters/portfolio/scss/components/_forms.scss */
@@ -1061,10 +1061,17 @@ textarea {
 
 /* line 41, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info address {
-  margin-bottom: 1.5rem;
-  padding: 0.5rem; }
+  min-height: 3.8rem; }
+  @media screen and (min-width: 48rem) {
+    /* line 41, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-info address {
+      min-height: 4.2rem; } }
+  @media screen and (min-width: 62rem) {
+    /* line 41, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    .contact-info address {
+      min-height: 6rem; } }
 
-/* line 45, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 50, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info .tel {
   position: relative;
   transition: color 250ms ease-in 150ms;
@@ -1092,7 +1099,7 @@ textarea {
     font-size: 1.5rem;
     font-weight: 800; }
 
-/* line 50, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 55, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info .email {
   position: relative;
   transition: color 250ms ease-in 150ms;
@@ -1120,29 +1127,29 @@ textarea {
     font-size: 1.5rem;
     font-weight: 800; }
 
-/* line 57, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 62, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-notice {
   max-width: 45ch; }
 
-/* line 61, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 66, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .notice {
   padding: 0.5rem;
   border: 0.2rem solid #0652ff;
   border-radius: 1rem 1rem 0 1rem;
   box-shadow: 0.4rem 0.625rem;
   margin: -1rem 0 1.625rem; }
-  /* line 67, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  /* line 72, ../../netmatters/portfolio/scss/layout/_contact.scss */
   .notice strong {
     font-size: 0.875rem; }
-  /* line 70, ../../netmatters/portfolio/scss/layout/_contact.scss */
+  /* line 75, ../../netmatters/portfolio/scss/layout/_contact.scss */
   .notice em {
     text-decoration: underline; }
 
-/* line 75, ../../netmatters/portfolio/scss/layout/_contact.scss */
+/* line 80, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-form {
   width: 100%; }
   @media screen and (min-width: 48rem) {
-    /* line 75, ../../netmatters/portfolio/scss/layout/_contact.scss */
+    /* line 80, ../../netmatters/portfolio/scss/layout/_contact.scss */
     .contact-form {
       max-width: 35rem; } }
 

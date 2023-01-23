@@ -38,9 +38,14 @@
 	@include mqm(x-large){
 		justify-self: center;
 	}
-	address				{		
-		margin-bottom: 1.5rem;
-		padding: 0.5rem;
+	address				{
+		min-height: 3.8rem;
+	@include mqm(medium)	{	
+		min-height: 4.2rem;
+		}
+	@include mqm(large)	{	
+		min-height: 6rem;
+		}
 	}
 	.tel				{
 		position: relative;
