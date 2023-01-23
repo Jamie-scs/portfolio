@@ -273,25 +273,26 @@ h4 {
 p {
   font-size: clamp(0.8rem, 1.4vw, 1.125rem);
   text-align: justify;
+  padding: 0 1rem;
   margin: 1rem auto; }
   @media screen and (min-width: 48rem) {
     /* line 35, ../../netmatters/portfolio/scss/base/_base.scss */
     p {
       max-width: 60ch; } }
 
-/* line 44, ../../netmatters/portfolio/scss/base/_base.scss */
+/* line 45, ../../netmatters/portfolio/scss/base/_base.scss */
 a {
   font-size: clamp(0.65rem, 1.7vw, 0.925rem);
   text-decoration: none;
   color: #000000; }
 
-/* line 50, ../../netmatters/portfolio/scss/base/_base.scss */
+/* line 51, ../../netmatters/portfolio/scss/base/_base.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 56, ../../netmatters/portfolio/scss/base/_base.scss */
+/* line 57, ../../netmatters/portfolio/scss/base/_base.scss */
 small {
   font-size: 0.8rem; }
 

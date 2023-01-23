@@ -35,6 +35,7 @@ h4					{
 p 					{
 	font-size: clamp(0.8rem, 1.4vw, 1.125rem);
 	text-align: justify;
+	padding: 0 1rem;
 	margin: 1rem auto;
 	@include mqm(medium)	{
 		max-width: 60ch;
