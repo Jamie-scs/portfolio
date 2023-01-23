@@ -50,13 +50,6 @@
 		font-weight: 400;
 		color: $white;
 	}
-	@include mqx(medium)	{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		height: 3rem;
-		padding-top: 0.5rem;
-	}
 }
 
 	

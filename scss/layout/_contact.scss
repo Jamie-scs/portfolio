@@ -38,6 +38,10 @@
 	@include mqm(x-large){
 		justify-self: center;
 	}
+	address				{		
+		margin-bottom: 1.5rem;
+		padding: 0.5rem;
+	}
 	.tel				{
 		position: relative;
 		@include fancy-line(0rem);
@@ -46,7 +50,7 @@
 	.email				{
 		position: relative;
 		@include fancy-line(-0.1rem);
-		@include fancy-text(1.125rem);
+		@include fancy-text(1.5rem);
 	}
 }
 
