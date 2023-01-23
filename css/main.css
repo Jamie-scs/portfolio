@@ -871,33 +871,32 @@ textarea {
       justify-content: space-evenly; }
     /* line 25, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
     .off-screen-menu .links-menu {
-      width: 50%;
       margin-bottom: 0.5rem; }
-    /* line 29, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+    /* line 28, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
     .off-screen-menu .icons-menu {
       border-right: 0.2rem solid #0652ff; } }
 
-/* line 35, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 34, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .off-screen-menu.active {
   left: 0; }
 
-/* line 39, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 38, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .logo-mobile-container {
   width: 100%;
   height: 8rem;
   border-bottom: 0.2rem solid #0652ff; }
 
-/* line 45, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 44, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .links-mobile {
   padding: 0 0 1rem; }
-  /* line 47, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 46, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile > :last-child {
     border-top: 0.1rem solid #0652ff;
     border-bottom: 0.1rem solid #0652ff; }
-  /* line 50, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 49, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile li {
     padding: 1rem 0.5rem; }
-  /* line 53, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 52, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile li:nth-child(-n+4) > a {
     position: relative; }
     /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -916,7 +915,7 @@ textarea {
     .links-mobile li:nth-child(-n+4) > a:hover::after, .links-mobile li:nth-child(-n+4) > a:focus::after {
       transform: scaleX(1);
       transform-origin: left; }
-  /* line 57, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 56, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile a {
     transition: #0652ff 250ms ease-in 150ms;
     transition: font-weight 50ms ease-out 50ms;
@@ -928,7 +927,7 @@ textarea {
       font-weight: 800; }
 
 @media screen and (min-height: 62rem) {
-  /* line 62, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  /* line 61, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .mobile-landscape {
     display: none; } }
 
