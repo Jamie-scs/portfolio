@@ -28,11 +28,11 @@
 
 // Border
 
-@mixin b-pri($side1)         {
-  border-#{$side1}: 0.2rem solid $color-pri;
+@mixin b-pri($side)         {
+  border-#{$side}: 0.2rem solid $color-pri;
 }
 
-@mixin b-sec($side1,$side2:null)         {
+@mixin b-sec($side1,$side2)         {
   border-#{$side1}: 0.1rem solid $color-pri;
   border-#{$side2}: 0.1rem solid $color-pri;
 }

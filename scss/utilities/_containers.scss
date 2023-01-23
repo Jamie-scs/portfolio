@@ -2,29 +2,47 @@
 // Containers
 // ========================================
 
-.sidebar			{
+.sidebar  		{
 	height: 100%;
 	width: $sidebar;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
+	background: $white;
 	@include b-pri(right);
+	@include b-pri(left);
+	@media screen and (max-height: 62rem)	{
+		width: $sidebar * 2;
+		nav 		{
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.links		{
+			width: $sidebar;
+			@include b-pri(left);
+		}
+	}
 }
 
 .main 				{
 	min-height: 100%;
 	@include mqm(large)	{
 		margin-left: $sidebar;
+		@media screen and (max-height: 62rem)	{
+			margin-left: $sidebar * 2;
+		}
 	}
 }
 
 .main-inner			{
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin: 0 auto;
+	@include mqm(medium)	{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin: 0 auto;
+	}
 	@include mqm(large)	{
-		max-width: 100rem;	
+		max-width: 75rem;	
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}

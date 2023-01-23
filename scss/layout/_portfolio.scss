@@ -6,13 +6,10 @@
 	padding: 1rem 0 0;
 	@include mqm(medium)	{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
 		gap: 1rem;
 	}
 	@include mqm(large)		{
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: 1fr 1fr;
 		gap: 2rem;
 		padding: 2rem 0 2rem;
 	}
@@ -21,24 +18,38 @@
 .item 					{
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(0deg, $color-pri, transparent 18%, $white 100%);
-	border-radius: 0 0 0.4rem 0.4rem;
+	background: linear-gradient(0deg, $color-pri, transparent 50%);
 	@include lift(1rem, 0.5rem, black);
 	@include fancy-shine;
 	@include mqx(medium)	{
 		margin-bottom: 1.5rem;
+	}
+	@include mqm(medium)	{
+		border-radius: 0 0 0.4rem 0.4rem;	
 	}
 }
 
 .item-img				{
 	position: relative;
 	overflow: hidden;
-	border-radius: 0.4rem 0.4rem 0 0;
+	@include mqm(medium)	{
+		border-radius: 0.4rem 0.4rem 0 0;
+	}
 }
 
 .item-text				{
 	padding: 0 0.5rem 0.5rem;
 	text-align: left;
+	p 						{
+		font-size: 1rem;
+		font-weight: 600;
+		color: $white;
+	}
+	span 						{
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: $white;
+	}
 	@include mqx(medium)	{
 		display: flex;
 		justify-content: space-between;

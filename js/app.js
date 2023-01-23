@@ -16,6 +16,7 @@ let form		= document.getElementById("form"),
 	firstName	= document.getElementById("name"),
 	surname		= document.getElementById("surname"),
 	email		= document.getElementById("email"),
+	phone		= document.getElementById("phone"),
 	subject		= document.getElementById("subject"),
 	message		= document.getElementById("message"),
 	errorMsg	= document.getElementsByClassName("error"),
@@ -27,6 +28,7 @@ const indexMsg	=
  	"First Name",
  	"Last Name",
  	"Email",
+ 	"Phone Number",
  	"Subject",
  	"Message"
 ]
@@ -36,15 +38,18 @@ const errMsg	=
 	noContent		: " is required",
 	hasInvalid		: " contains invalid characters",
 	nameIsShort		: " is too short, min 2 characters",
+	telIsShort		: " is too short, min 11 digits",
+	telIsLong		: " is too long, max 14 digits",
 	subIsShort		: " is too short, min 4 characters",
 	msgIsShort		: " is too short, min 20 characters",
 	isLong			: " is too long, max 254 characters",
-	notEmail		: " given is not a valid email"
+	notEmail		: " given is not a valid email",
+	notTel			: " given is not a valid number"
 }
 
-const regExpAN	= new RegExp(/^[\w ]+$/),
-	  regExpTx	= new RegExp(/^[a-zA-Z ]+$/),
-	  regExpMsg	= new RegExp(/^[a-zA-Z\s]+$/),
+const regExpTx	= new RegExp(/^[a-zA-Z ]*$/),
+	  regExpMsg	= new RegExp(/^[a-zA-Z\s]*$/),
+	  regExpTel	= new RegExp(/^[0-9 ]*$/),
 	  regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
 let validate	= (id, index) => {
@@ -54,12 +59,12 @@ let validate	= (id, index) => {
 	    failureIcon[index].style.opacity = "1";
 	    successIcon[index].style.opacity = "0";
 	};
-	if (val === "")	{
+	if (val === "" && id !== phone)	{
 		errorMsg[index].innerHTML = indexMsg[index] + errMsg.noContent;
 		fail();
 	    return;
 	}
-	if (!val.match(regExpTx) && id !== email && id !== message)	{
+	if (!val.match(regExpTx) && id !== email && id !== message && id !== phone)	{
 		errorMsg[index].innerHTML = indexMsg[index] + errMsg.hasInvalid;
 	    fail();
 	    return;
@@ -76,6 +81,21 @@ let validate	= (id, index) => {
 	}
 	if (!val.match(regExpEm) && id === email)	{
 		errorMsg[index].innerHTML = indexMsg[index] + errMsg.notEmail;
+	    fail();
+	    return;
+	}
+	if (!val.match(regExpTel) && id === phone)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.notTel;
+	    fail();
+	    return;
+	}
+	if (val.length !== 0 && val.length < 11 && id === phone)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.telIsShort;
+	    fail();
+	    return;
+	}
+	if (val.length > 14 && id === phone)	{
+		errorMsg[index].innerHTML = indexMsg[index] + errMsg.telIsLong;
 	    fail();
 	    return;
 	}
@@ -110,8 +130,9 @@ form.addEventListener('submit', (e) => {
 	validate(firstName, 0);
 	validate(surname, 1);
 	validate(email, 2);
-	validate(subject, 3);
-	validate(message, 4);
+	validate(phone, 3);
+	validate(subject, 4);
+	validate(message, 5);
 });
 
 // Off Screen Menu
@@ -126,7 +147,7 @@ hamMenu.addEventListener('click', () => {
 
 // Hide Menu On Link Click
 
-$(".logo-mobile-container a, nav a").on("click", function() {
+$(".logo-mobile-container a, nav a, .main").on("click", function() {
     $(".hamburger-menu").removeClass("active");
     $(".off-screen-menu").removeClass("active");
 });

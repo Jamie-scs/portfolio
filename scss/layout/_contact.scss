@@ -8,35 +8,33 @@
 	align-items: center;
 	background: $search;
 	padding: 1rem;
-	border-radius: 1rem;
-	@include mqm(small)	{
-		margin: 2rem 0 0;
-	}
 	@include mqm(medium)	{
 		display: grid;
 		align-items: start;
 		grid-template-columns: 3.5fr 4fr;
 		gap: 2rem;
 		padding: 1.5rem;
+		border-radius: 1rem;
+		margin: 2rem 0 0;
 	}
 	@include mqm(large)		{
 		grid-template-columns: 1fr 1fr;
 		padding: 2rem;
-	}
-	@include mqm(x-large)		{
-		grid-template-columns: 2fr 3fr;
 	}
 }
 
 .info-container		{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
 	height: 100%;
+	@include mqm(medium)	{
+		max-width: 45ch;
+	}
 }
 
 .contact-info		{
-	max-width: 45ch;
 	@include mqm(x-large){
 		justify-self: center;
 	}
@@ -50,6 +48,10 @@
 		@include fancy-line(-0.1rem);
 		@include fancy-text(1.125rem);
 	}
+}
+
+.contact-notice		{
+	max-width: 45ch;
 }
 
 .notice				{
@@ -68,4 +70,7 @@
 
 .contact-form	{
 	width: 100%;
+	@include mqm(medium)	{
+		max-width: 35rem;
+	}
 }

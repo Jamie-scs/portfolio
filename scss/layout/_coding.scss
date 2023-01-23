@@ -2,12 +2,64 @@
 // Coding
 // ========================================
 
-.coming-soon		{
-	background: linear-gradient(0deg,
-		$color-pri,
-		$search 44%,
-		$white 46%,
-		$search 48%,
-		$color-pri 100%);
-	border-radius: 1rem;
+.example-container	{
+	background: $news-border;
+	padding: 1rem;
+	@include mqm(medium)	{
+		border-radius: 1rem;
+		margin: 1rem 0 2rem;
+	}
+}
+
+.coding-container	{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@extend %coding-container;
+}
+
+.content-container-half	{
+	@include mqm(large)	{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		padding: 2rem;
+	}
+}
+
+.screenshot			{
+	@extend %screenshot;
+	@include mqm(large){
+		max-width: 80%;
+		margin-top: 1rem;
+	}
+}
+
+.screenshot-half		{
+	@extend %screenshot;
+	@include mqm(large)	{
+		max-width: 40%;
+		margin-top: 1.5rem;
+	}
+	@include mqm(x-large){
+		max-width: 50%;
+		margin-top: 2rem;
+	}
+}
+
+.screenshot img 	{
+	width: 100%;
+	@extend %screenshot-img;
+}
+
+.screenshot-half img 	{
+	width: 100%;
+	@extend %screenshot-img;
+}
+
+.screenshot-info	{
+	padding: 1rem 1rem 0;
+	@include mqm(large){
+		width: 80%;
+	}
 }

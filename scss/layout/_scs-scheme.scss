@@ -25,9 +25,14 @@
 		align-items: center;
 		padding: 2rem;
 		border: none;
-		border-radius: 1rem;
 		box-shadow:  0 0 0.5rem 0.5rem rgba($black, .1);
 		margin: 1rem 0;
+		@include mqm(medium){
+			border-radius: 1rem;
+		}
+		@include mqx(medium)	{
+			width: 100%;
+		}
 	}
 }
 

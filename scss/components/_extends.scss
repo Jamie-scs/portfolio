@@ -2,3 +2,54 @@
 // Placeholders
 // ========================================
 
+// Coding Examples
+
+%screenshot		{
+	border-radius: 0.5rem;
+	@include mqm(medium)	{
+		background: $color-pri;
+		border-radius: 0.5rem 1.5rem 0.75rem 1.5rem;
+		box-shadow: 0.5rem 0.35rem $color-pri;
+		margin: 0 1.5rem 0 1rem;
+	}
+}
+
+%screenshot-img	{
+	border: 0.2rem solid $black;
+	border-radius: 0.5rem;
+	@include mqm(medium)	{
+		border-top: 0.2rem solid $black;
+		border-right: 0.025rem solid $black;
+		border-bottom: 0.05rem solid $black;
+		border-left: 0.05rem solid $black;
+		&.html	{
+			background: $html;
+			box-shadow: 0.25rem 0.35rem $html;
+		}
+		&.css	{
+			background: $css;
+			box-shadow: 0.25rem 0.35rem $css;
+		}
+		&.sass	{
+			background: $sass;
+			box-shadow: 0.25rem 0.35rem $sass;
+		}
+		&.javascript	{
+			background: $javascript;
+			box-shadow: 0.25rem 0.35rem $javascript;
+		}
+	}
+}
+
+%coding-container	{
+	background: $white;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	@include mqm(medium)	{
+		padding: 1rem 0 1.5rem;
+		border-radius: 1rem;
+	}
+	@include mqm(large){
+		padding: 2rem;
+	}	
+}

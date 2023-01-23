@@ -42,8 +42,7 @@
 
 }
 
-
-// Logo
+// Sidebar Navigation
 
 .logo				{
 	margin: auto;
@@ -63,15 +62,10 @@
 	}
 }
 
-// Sidebar Navigation
-
 .links a 			{
-	@include mqx(large)	{	
-		color: $color-pri;
-		font-size: 1.5rem;
-		font-weight: 600;
-		line-height: 2.75rem;
-	}
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 2.75rem;
 }
 
 // Hero
@@ -81,8 +75,8 @@
 }
 
 .overlay-h1	.h1		{
-	text-shadow: -0.5rem 0.5rem 1rem $color-pri;
-	-webkit-text-fill-color:  #eee;
+	text-shadow: 0.25rem 0.25rem 0.25rem $color-pri;
+	-webkit-text-fill-color: $white;
 	-webkit-text-stroke-width: 0.1rem;
 	-webkit-text-stroke-color: $color-pri;
 	font-size: clamp(2.4rem, 5.5vw, 4rem);
@@ -92,8 +86,8 @@
 }
 
 .overlay-p p 		{
-	text-shadow: -0.5rem 0.5rem 1rem $color-pri;
-	-webkit-text-fill-color: #eee;
+	text-shadow: 0.25rem 0.25rem 0.25rem $color-pri;
+	-webkit-text-fill-color: $white;
 	-webkit-text-stroke-width: 0.1rem;
 	-webkit-text-stroke-color: $color-pri;
 	font-size: clamp(1.85rem, 4vw, 3rem);
@@ -121,6 +115,11 @@ small				{
 		font-style: normal;
 		font-weight: 600;
 	}
+}
+
+label,
+.form-control		{
+	font-size: clamp(1rem, 1.4vw, 1.125rem);
 }
 
 // About

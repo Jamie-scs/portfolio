@@ -9,12 +9,19 @@
 	z-index: 2;
 	height: 100dvh;
 	width: 12.75rem;
-	background: #eee;
+	background: $white;
 	@include b-pri(right);
 	transition: left ease .6s;
 	@include mqm(small)		{
 		left: -30.25rem;
 		width: 30.25rem;
+	}
+	@media screen and (max-height: 62rem)	{
+		nav 		{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-evenly;
+		}
 	}
 }
 
