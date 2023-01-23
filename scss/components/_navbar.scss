@@ -34,12 +34,13 @@
 }
 
 .links				{
-	padding: 2rem 0 1rem;
+	margin: 0 0.5rem 1rem;
 	>:last-child		{
 		@include b-sec(top, bottom);
+		margin-bottom: 0.5rem;
 	}
 	li 					{
-		margin: 1rem 0;
+		margin: 0.5rem 0;
 	}
 	li:nth-child(-n+4)>a	{
 		position: relative;
@@ -50,16 +51,20 @@
 	}
 }
 
+.links-menu			{
+	padding: 0.5rem;
+}
+
 .social				{
-	display: flex;
-	justify-content: space-evenly;
-	padding-bottom: 2rem;
-	margin: 1rem 0 0;
+	@extend %social;
+	@media screen and (max-height: 62rem)	{
+		display: none;
+	}
 }
 
 .social-icn				{
 	width: 4rem;
-	height: 4rem;
+	min-height: 3.75rem;
 	a span					{
 		font-size: 1.8rem;
 		background-color: $white;
@@ -83,6 +88,7 @@
 .icons-menu				{
 	width: 100%;
 	@media screen and (max-height: 62rem)	{
+		width: 50%;
 		@include mqx(small)						{
 			display: none;
 		}
@@ -93,7 +99,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	padding-bottom: 1rem;
-	margin: 1rem 0;
+	margin: 0 0 1rem;
 }
 
 .stack-icn img			{

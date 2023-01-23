@@ -291,6 +291,10 @@ ul {
   margin: 0;
   padding: 0; }
 
+/* line 56, ../../netmatters/portfolio/scss/base/_base.scss */
+small {
+  font-size: 0.8rem; }
+
 /* line 8, ../../netmatters/portfolio/scss/base/_typography.scss */
 .navigation .logo-mobile {
   margin: auto;
@@ -377,59 +381,67 @@ ul {
 /* line 99, ../../netmatters/portfolio/scss/base/_typography.scss */
 small {
   font-size: 0.875rem;
-  font-weight: 600; }
+  font-weight: 600;
+  transition: #0652ff 250ms ease-in 150ms;
+  transition: font-weight 50ms ease-out 50ms;
+  transition: font-size 50ms ease-out 50ms; }
+  /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+  small:hover, small:focus {
+    color: #0652ff;
+    font-size: 1.2rem;
+    font-weight: 800; }
 
-/* line 112, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 113, ../../netmatters/portfolio/scss/base/_typography.scss */
 .contact-info a.tel,
 .contact-info a.email {
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-style: normal;
   font-weight: 600; }
 
-/* line 120, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 121, ../../netmatters/portfolio/scss/base/_typography.scss */
 label,
 .form-control {
   font-size: clamp(1rem, 1.4vw, 1.125rem); }
 
-/* line 127, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 128, ../../netmatters/portfolio/scss/base/_typography.scss */
 .about-skills li {
   display: inline-block;
   font-size: 1.5rem;
   padding: 0 1rem; }
-  /* line 131, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 132, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.html {
     text-shadow: 0 0 0.5rem #f06529; }
-  /* line 134, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 135, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.css {
     text-shadow: 0 0 0.5rem #2965f1; }
-  /* line 137, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 138, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.sass {
     text-shadow: 0 0 0.5rem #cc6699; }
-  /* line 140, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 141, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.javascript {
     text-shadow: 0 0 0.5rem #f0db4f; }
-  /* line 143, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 144, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.jquery {
     text-shadow: 0 0 0.5rem #0868ac; }
-  /* line 146, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 147, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.git {
     text-shadow: 0 0 0.5rem #f1502f; }
-  /* line 149, ../../netmatters/portfolio/scss/base/_typography.scss */
+  /* line 150, ../../netmatters/portfolio/scss/base/_typography.scss */
   .about-skills li.bash {
     text-shadow: 0 0 0.5rem #4eaa25; }
 
-/* line 156, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 157, ../../netmatters/portfolio/scss/base/_typography.scss */
 .coming-soon h2 {
   font-weight: 900;
   text-transform: capitalize;
   font-size: clamp(3rem, 7vw, 7rem); }
 
-/* line 165, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 166, ../../netmatters/portfolio/scss/base/_typography.scss */
 .scs-container em {
   font-size: inherit;
   margin: 0.5rem 0; }
 
-/* line 169, ../../netmatters/portfolio/scss/base/_typography.scss */
+/* line 170, ../../netmatters/portfolio/scss/base/_typography.scss */
 .scs-container li {
   font-size: clamp(0.8rem, 1.4vw, 1.125rem);
   margin: 0; }
@@ -487,6 +499,13 @@ label,
     /* line 44, ../../netmatters/portfolio/scss/components/_extends.scss */
     .coding-container {
       padding: 2rem; } }
+
+/* line 57, ../../netmatters/portfolio/scss/components/_extends.scss */
+.social, .mobile-landscape {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  margin: 1rem 0 0; }
 
 /* line 7, ../../netmatters/portfolio/scss/components/_img.scss */
 .hero picture > img {
@@ -713,15 +732,16 @@ textarea {
 
 /* line 36, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .links {
-  padding: 2rem 0 1rem; }
+  margin: 0 0.5rem 1rem; }
   /* line 38, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links > :last-child {
     border-top: 0.1rem solid #0652ff;
-    border-bottom: 0.1rem solid #0652ff; }
-  /* line 41, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    border-bottom: 0.1rem solid #0652ff;
+    margin-bottom: 0.5rem; }
+  /* line 42, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links li {
-    margin: 1rem 0; }
-  /* line 44, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    margin: 0.5rem 0; }
+  /* line 45, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links li:nth-child(-n+4) > a {
     position: relative; }
     /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -740,9 +760,9 @@ textarea {
     .links li:nth-child(-n+4) > a:hover::after, .links li:nth-child(-n+4) > a:focus::after {
       transform: scaleX(1);
       transform-origin: left; }
-  /* line 48, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 49, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .links a {
-    transition: color 250ms ease-in 150ms;
+    transition: #0652ff 250ms ease-in 150ms;
     transition: font-weight 50ms ease-out 50ms;
     transition: font-size 50ms ease-out 50ms; }
     /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -751,24 +771,26 @@ textarea {
       font-size: 1.2rem;
       font-weight: 800; }
 
-/* line 53, ../../netmatters/portfolio/scss/components/_navbar.scss */
-.social {
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 2rem;
-  margin: 1rem 0 0; }
+/* line 54, ../../netmatters/portfolio/scss/components/_navbar.scss */
+.links-menu {
+  padding: 0.5rem; }
 
-/* line 60, ../../netmatters/portfolio/scss/components/_navbar.scss */
+@media screen and (max-height: 62rem) {
+  /* line 58, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  .social {
+    display: none; } }
+
+/* line 65, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .social-icn {
   width: 4rem;
-  height: 4rem; }
-  /* line 63, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  min-height: 3.75rem; }
+  /* line 68, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn a span {
     font-size: 1.8rem;
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 50%; }
-  /* line 69, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 74, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:first-child a > span {
     color: #3b5998;
     transition: background-color, color 250ms ease-in 150ms;
@@ -779,7 +801,7 @@ textarea {
       background-color: #3b5998;
       font-size: 2.5rem;
       padding: 0.25rem; }
-  /* line 73, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 78, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:nth-child(2) a > span {
     color: #0077b5;
     transition: background-color, color 250ms ease-in 150ms;
@@ -790,7 +812,7 @@ textarea {
       background-color: #0077b5;
       font-size: 2.5rem;
       padding: 0.25rem; }
-  /* line 77, ../../netmatters/portfolio/scss/components/_navbar.scss */
+  /* line 82, ../../netmatters/portfolio/scss/components/_navbar.scss */
   .social-icn:last-child a > span {
     color: #f1502f;
     transition: background-color, color 250ms ease-in 150ms;
@@ -802,23 +824,26 @@ textarea {
       font-size: 2.5rem;
       padding: 0.25rem; }
 
-/* line 83, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 88, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .icons-menu {
   width: 100%; }
+  @media screen and (max-height: 62rem) {
+    /* line 88, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    .icons-menu {
+      width: 50%; } }
+  @media screen and (max-height: 62rem) and (max-width: 34.9375rem) {
+    /* line 88, ../../netmatters/portfolio/scss/components/_navbar.scss */
+    .icons-menu {
+      display: none; } }
 
-@media screen and (max-height: 62rem) and (max-width: 34.9375rem) {
-  /* line 83, ../../netmatters/portfolio/scss/components/_navbar.scss */
-  .icons-menu {
-    display: none; } }
-
-/* line 92, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 98, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-row {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 1rem;
-  margin: 1rem 0; }
+  margin: 0 0 1rem; }
 
-/* line 99, ../../netmatters/portfolio/scss/components/_navbar.scss */
+/* line 105, ../../netmatters/portfolio/scss/components/_navbar.scss */
 .stack-icn img {
   width: 2.5rem; }
 
@@ -826,41 +851,86 @@ textarea {
 .off-screen-menu {
   position: fixed;
   top: 0;
-  left: -12.75rem;
+  left: -13rem;
   z-index: 2;
   height: 100dvh;
-  width: 12.75rem;
+  width: 13rem;
   background: #ffffff;
   border-right: 0.2rem solid #0652ff;
   transition: left ease .6s; }
   @media screen and (min-width: 35rem) {
     /* line 5, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
     .off-screen-menu {
-      left: -30.25rem;
-      width: 30.25rem; } }
+      left: -32rem;
+      width: 32rem; } }
   @media screen and (max-height: 62rem) {
     /* line 20, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
     .off-screen-menu nav {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-evenly; } }
+      justify-content: space-evenly; }
+    /* line 25, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+    .off-screen-menu .links-menu {
+      width: 50%;
+      margin-bottom: 0.5rem; }
+    /* line 29, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+    .off-screen-menu .icons-menu {
+      border-right: 0.2rem solid #0652ff; } }
 
-/* line 28, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 35, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .off-screen-menu.active {
   left: 0; }
 
-/* line 32, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 39, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .logo-mobile-container {
   width: 100%;
   height: 8rem;
   border-bottom: 0.2rem solid #0652ff; }
 
-/* line 38, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+/* line 45, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
 .links-mobile {
-  padding: 2rem 0 1rem; }
-  /* line 40, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  padding: 0 0 1rem; }
+  /* line 47, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  .links-mobile > :last-child {
+    border-top: 0.1rem solid #0652ff;
+    border-bottom: 0.1rem solid #0652ff; }
+  /* line 50, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
   .links-mobile li {
-    height: 2.75rem; }
+    padding: 1rem 0.5rem; }
+  /* line 53, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  .links-mobile li:nth-child(-n+4) > a {
+    position: relative; }
+    /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links-mobile li:nth-child(-n+4) > a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.375rem;
+      width: 100%;
+      height: 0.1rem;
+      background-color: #0652ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in-out; }
+    /* line 55, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links-mobile li:nth-child(-n+4) > a:hover::after, .links-mobile li:nth-child(-n+4) > a:focus::after {
+      transform: scaleX(1);
+      transform-origin: left; }
+  /* line 57, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  .links-mobile a {
+    transition: #0652ff 250ms ease-in 150ms;
+    transition: font-weight 50ms ease-out 50ms;
+    transition: font-size 50ms ease-out 50ms; }
+    /* line 66, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
+    .links-mobile a:hover, .links-mobile a:focus {
+      color: #0652ff;
+      font-size: 1.2rem;
+      font-weight: 800; }
+
+@media screen and (min-height: 62rem) {
+  /* line 62, ../../netmatters/portfolio/scss/components/_off-screen-menu.scss */
+  .mobile-landscape {
+    display: none; } }
 
 /* line 7, ../../netmatters/portfolio/scss/layout/_home.scss */
 .hero {
@@ -911,8 +981,13 @@ textarea {
   .scroll a small {
     color: #ffffff;
     background: linear-gradient(0deg, rgba(6, 82, 255, 0) 0%, rgba(6, 82, 255, 0.25) 15%, rgba(6, 82, 255, 0.75) 25%, rgba(6, 82, 255, 0.5) 75%, rgba(6, 82, 255, 0.25) 85%, rgba(6, 82, 255, 0) 100%); }
+    /* line 62, ../../netmatters/portfolio/scss/layout/_home.scss */
+    .scroll a small:hover, .scroll a small:focus {
+      border-radius: 0.75rem;
+      background: rgba(255, 255, 255, 0.7);
+      color: #0652ff; }
 
-/* line 67, ../../netmatters/portfolio/scss/layout/_home.scss */
+/* line 73, ../../netmatters/portfolio/scss/layout/_home.scss */
 #cursor {
   -webkit-text-fill-color: #0652ff;
   -webkit-text-stroke-width: 0.1rem;
@@ -922,11 +997,11 @@ textarea {
   margin-left: 0.01ch; }
 
 /* Class that will eventually be removed to letters in the for loop*/
-/* line 76, ../../netmatters/portfolio/scss/layout/_home.scss */
+/* line 82, ../../netmatters/portfolio/scss/layout/_home.scss */
 .typeAction {
   visibility: hidden;
   /*Below targets the cursor's animation & colour*/ }
-  /* line 81, ../../netmatters/portfolio/scss/layout/_home.scss */
+  /* line 87, ../../netmatters/portfolio/scss/layout/_home.scss */
   .typeAction span {
     padding-left: 1px;
     animation: blink 700ms steps(1) infinite;
@@ -1074,7 +1149,7 @@ textarea {
 /* line 50, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info .tel {
   position: relative;
-  transition: color 250ms ease-in 150ms;
+  transition: #0652ff 250ms ease-in 150ms;
   transition: font-weight 50ms ease-out 50ms;
   transition: font-size 50ms ease-out 50ms; }
   /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -1102,7 +1177,7 @@ textarea {
 /* line 55, ../../netmatters/portfolio/scss/layout/_contact.scss */
 .contact-info .email {
   position: relative;
-  transition: color 250ms ease-in 150ms;
+  transition: #0652ff 250ms ease-in 150ms;
   transition: font-weight 50ms ease-out 50ms;
   transition: font-size 50ms ease-out 50ms; }
   /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -1316,7 +1391,7 @@ textarea {
   /* line 51, ../../netmatters/portfolio/scss/layout/_scs-scheme.scss */
   .treehouse h4 > a {
     position: relative;
-    transition: color 250ms ease-in 150ms;
+    transition: #0652ff 250ms ease-in 150ms;
     transition: font-weight 50ms ease-out 50ms;
     transition: font-size 50ms ease-out 50ms; }
     /* line 43, ../../netmatters/portfolio/scss/abstracts/_mixins.scss */
@@ -1375,8 +1450,8 @@ textarea {
 
 /* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
 .sidebar {
-  height: 100%;
-  width: 12rem;
+  height: 100dvh;
+  width: 13rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -1387,14 +1462,14 @@ textarea {
   @media screen and (max-height: 62rem) {
     /* line 5, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     .sidebar {
-      width: 24rem; }
+      width: 32.5rem; }
       /* line 17, ../../netmatters/portfolio/scss/utilities/_containers.scss */
       .sidebar nav {
         display: flex;
         flex-direction: row-reverse; }
       /* line 21, ../../netmatters/portfolio/scss/utilities/_containers.scss */
       .sidebar .links-menu {
-        width: 12rem;
+        width: 50%;
         border-left: 0.2rem solid #0652ff; } }
 
 /* line 28, ../../netmatters/portfolio/scss/utilities/_containers.scss */
@@ -1403,11 +1478,11 @@ textarea {
   @media screen and (min-width: 62rem) {
     /* line 28, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     .main {
-      margin-left: 12rem; } }
+      margin-left: 13rem; } }
   @media screen and (min-width: 62rem) and (max-height: 62rem) {
     /* line 28, ../../netmatters/portfolio/scss/utilities/_containers.scss */
     .main {
-      margin-left: 24rem; } }
+      margin-left: 32.5rem; } }
 
 @media screen and (min-width: 48rem) {
   /* line 38, ../../netmatters/portfolio/scss/utilities/_containers.scss */

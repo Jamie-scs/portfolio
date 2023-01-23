@@ -5,22 +5,29 @@
 .off-screen-menu		{
 	position: fixed;
 	top: 0;
-	left: -12.75rem;
+	left: -13rem;
 	z-index: 2;
 	height: 100dvh;
-	width: 12.75rem;
+	width: 13rem;
 	background: $white;
 	@include b-pri(right);
 	transition: left ease .6s;
 	@include mqm(small)		{
-		left: -30.25rem;
-		width: 30.25rem;
+		left: -32rem;
+		width: 32rem;
 	}
 	@media screen and (max-height: 62rem)	{
 		nav 		{
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-evenly;
+		}
+		.links-menu	{
+			width: 50%;
+			margin-bottom: 0.5rem;
+		}
+		.icons-menu	{
+			@include b-pri(right);			
 		}
 	}
 }
@@ -36,8 +43,25 @@
 }
 
 .links-mobile			{
-	padding: 2rem 0 1rem;
+	padding: 0 0 1rem;
+	>:last-child		{
+		@include b-sec(top, bottom);
+	}
 	li 						{
-		height: 2.75rem;
+		padding: 1rem 0.5rem;
+	}
+	li:nth-child(-n+4)>a	{
+		position: relative;
+		@include fancy-line;
+	}
+	a 					{
+		@include fancy-text(1.2rem);
+	}
+}
+
+.mobile-landscape		{
+	@extend %social;
+	@media screen and (min-height: 62rem)	{
+		display: none;
 	}
 }
