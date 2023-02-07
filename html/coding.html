@@ -31,7 +31,7 @@
 		<path fill="#ebebeb" d="M124.46 208.59l5.065 56.517H256V208.59zM119.419 150.715H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"/>
 		<path fill="#fff" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"/>
 	</symbol>  
-	<symbol id="sass" x="0px" y="0px" viewBox="0 0 420 420" enable-background="new 0 0 420 420" xml:space="preserve">
+	<symbol id="sass" viewBox="0 0 420 420" enable-background="new 0 0 420 420" xml:space="preserve">
 		<g>
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#CC6699" d="M210,4.564c113.458,0,205.435,91.977,205.435,205.436 c0,113.458-91.978,205.435-205.435,205.435C96.542,415.436,4.564,323.459,4.564,210C4.564,96.542,96.542,4.564,210,4.564"/>
 			<path fill="#FFFFFF" d="M338.863,92.494c-9.303-36.486-69.801-48.48-127.059-28.139c-34.075,12.106-70.965,31.106-97.488,55.916 c-31.537,29.497-36.566,55.172-34.494,65.9c7.312,37.854,59.18,62.597,80.501,80.954v0.111 c-6.287,3.095-52.303,26.384-63.072,50.191c-11.363,25.117,1.808,43.141,10.529,45.565c27.018,7.519,54.745-6.003,69.645-28.228 c14.378-21.448,13.182-49.145,6.933-62.921c8.619-2.274,18.669-3.293,31.44-1.802c36.037,4.209,43.107,26.711,41.756,36.127 c-1.352,9.418-8.91,14.596-11.438,16.158c-2.527,1.564-3.299,2.105-3.086,3.268c0.307,1.689,1.477,1.627,3.631,1.262 c2.967-0.5,18.924-7.66,19.605-25.043c0.869-22.07-20.28-46.758-57.729-46.113c-15.424,0.267-25.121,1.733-32.127,4.34 c-0.518-0.59-1.045-1.177-1.59-1.758c-23.151-24.701-65.951-42.174-64.135-75.38c0.66-12.072,4.856-43.861,82.238-82.421 c63.391-31.587,114.137-22.894,122.906-3.631c12.527,27.522-27.121,78.673-92.951,86.052c-25.081,2.812-38.288-6.909-41.573-10.529 c-3.458-3.812-3.973-3.984-5.265-3.268c-2.103,1.165-0.77,4.53,0,6.536c1.966,5.115,10.031,14.185,23.782,18.698 c12.097,3.97,41.544,6.151,77.158-7.624C316.865,171.287,348.012,128.368,338.863,92.494 M169.174,278.432 c2.988,11.056,2.661,21.366-0.427,30.703c-0.343,1.037-0.72,2.063-1.13,3.076c-0.411,1.013-0.854,2.014-1.331,3.002 c-2.381,4.939-5.575,9.563-9.488,13.832c-11.937,13.021-28.613,17.945-35.764,13.797c-7.722-4.477-3.855-22.836,9.985-37.465 c14.887-15.738,36.308-25.857,36.308-25.857l-0.032-0.064C167.911,279.123,168.538,278.781,169.174,278.432"/>
@@ -71,7 +71,7 @@
 		</svg>
 	</button><!-- hamburger-menu -->
 
-	<div class="off-screen-menu mobile">
+	<div id="primary-navigation" class="off-screen-menu mobile">
 		
 		<div class="logo-container">
 			<a href="../index.html" class="logo-mobile animsition-link">JC</a>
@@ -119,29 +119,29 @@
 				<div class="stack-row">
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#html">
+							<use xlink:href="#html"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#css">
+							<use xlink:href="#css"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#javascript">
+							<use xlink:href="#sass"/>
 						</svg>
 					</div><!-- stack-icn -->
 				</div><!-- stack-row -->
 				<div class="stack-row">
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#jquery">
+							<use xlink:href="#javascript"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#html">
+							<use xlink:href="#jquery"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn hidden">
@@ -209,43 +209,41 @@
 				<div class="stack-row">
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#html">
+							<use xlink:href="#html"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#css">
+							<use xlink:href="#css"/>
+						</svg>
+					</div><!-- stack-icn -->
+					<div class="stack-icn">
+						<svg>
+							<use xlink:href="#sass"/>
 						</svg>
 					</div><!-- stack-icn -->
 				</div><!-- stack-row -->
 				<div class="stack-row">
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#sass">
+							<use xlink:href="#javascript"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn">
 						<svg>
-							<use xlink:href="#javascript">
-						</svg>
-					</div><!-- stack-icn -->
-				</div><!-- stack-row -->
-				<div class="stack-row">
-					<div class="stack-icn">
-						<svg>
-							<use xlink:href="#jquery">
+							<use xlink:href="#jquery"/>
 						</svg>
 					</div><!-- stack-icn -->
 					<div class="stack-icn hidden">
-						<!-- <img src="img/mysql.svg" alt="MySQL Logo"> -->
+						<!-- <img src="../img/mysql.svg" alt="MySQL Logo"> -->
 					</div><!-- stack-icn -->
 				</div><!-- stack-row -->
 				<div class="stack-row">
 					<div class="stack-icn hidden">
-						<!-- <img src="img/php.svg" alt="PHP Logo"> -->
+						<!-- <img src="../img/php.svg" alt="PHP Logo"> -->
 					</div><!-- stack-icn -->
 					<div class="stack-icn hidden">
-						<!-- <img src="img/react.svg" alt="React Logo"> -->
+						<!-- <img src="../img/react.svg" alt="React Logo"> -->
 					</div>
 				</div><!-- stack-row -->
 			</div><!-- icons-menu -->
@@ -571,9 +569,9 @@ const
     regExpTx   = new RegExp(/^[a-zA-Z ]*$/),
     regExpMsg  = new RegExp(/^[a-zA-Z\s]*$/),
     regExpTel  = new RegExp(/^[0-9]*$/),
-    regExpEm   = new RegExp(/^(([^<>()\[\]\\
-    .,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|
-    (".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]
+    regExpEm   = new RegExp(/^(([^&lt;&gt;()\[\]\\
+    .,;:\s@&quot;]+(\.[^&lt;&gt;()\[\]\\.,;:\s@&quot;]+)*)|
+    (&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]
     {1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+
     [a-zA-Z]{2,}))$/);
 </code>
@@ -587,77 +585,77 @@ const
 							<div class="code-snippet">
 <pre>
 <code>
-let validate  =  (id, index) => {
+let validate  =  (id, index) =&gt; {
     let val   =  id.value.trim();
-    let fail  =  ()     =>          {
-        id.style.border = "2px solid red";
-        failureIcon[index].style.opacity = "1";
-        successIcon[index].style.opacity = "0";
+    let fail  =  ()     =&gt;          {
+        id.style.border = &quot;2px solid red&quot;;
+        failureIcon[index].style.opacity = &quot;1&quot;;
+        successIcon[index].style.opacity = &quot;0&quot;;
     };
-    if (val === "" && id !== phone)                 {
+    if (val === &quot;&quot; &amp;&amp; id !== phone)                 {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.noContent;
         fail();
         return;
     }
-    if (!val.match(regExpTx) && id !== email && id !== message && id !== phone)	{
+    if (!val.match(regExpTx) &amp;&amp; id !== email &amp;&amp; id !== message &amp;&amp; id !== phone)	{
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.hasInvalid;
         fail();
         return;
     }
-    if (val.length < 2 && id === firstName)         {
+    if (val.length &lt; 2 &amp;&amp; id === firstName)         {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.nameIsShort;
         fail();
         return;
     }
-    if (val.length < 2 && id === surname)           {
+    if (val.length &lt; 2 &amp;&amp; id === surname)           {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.nameIsShort;
         fail();
         return;
     }
-    if (!val.match(regExpEm) && id === email)       {
+    if (!val.match(regExpEm) &amp;&amp; id === email)       {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.notEmail;
         fail();
         return;
     }
-    if (!val.match(regExpTel) && id === phone)      {
+    if (!val.match(regExpTel) &amp;&amp; id === phone)      {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.notTel;
         fail();
         return;
     }
-    if (val.length !== 0 && val.length < 11 && id === phone)  {
+    if (val.length !== 0 &amp;&amp; val.length &lt; 11 &amp;&amp; id === phone)  {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.telIsShort;
         fail();
         return;
     }
-    if (val.length > 11 && id === phone)	        {
+    if (val.length &gt; 11 &amp;&amp; id === phone)	        {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.telIsLong;
         fail();
         return;
     }
-    if (val.length < 4 && id === subject)	        {
+    if (val.length &lt; 4 &amp;&amp; id === subject)	        {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.subIsShort;
         fail();
         return;
     }
-    if (!val.match(regExpMsg) && id === message)    {
+    if (!val.match(regExpMsg) &amp;&amp; id === message)    {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.hasInvalid;
         fail();
         return;
     }
-    if (val.length < 20 && id === message)          {
+    if (val.length &lt; 20 &amp;&amp; id === message)          {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.msgIsShort;
         fail();
         return;
     }
-    if (val.length > 254)    {
+    if (val.length &gt; 254)    {
         errorMsg[index].innerHTML = indexMsg[index] + errMsg.isLong;
         fail();
         return;
     }
-    errorMsg[index].innerHTML = "";
-    id.style.border = "2px solid green";
-    failureIcon[index].style.opacity = "0";
-    successIcon[index].style.opacity = "1";
+    errorMsg[index].innerHTML = &quot;&quot;;
+    id.style.border = &quot;2px solid green&quot;;
+    failureIcon[index].style.opacity = &quot;0&quot;;
+    successIcon[index].style.opacity = &quot;1&quot;;
 };
 </code>
 </pre>
