@@ -35,3 +35,10 @@
 .off-screen-menu.active	{
 	left: 0;
 }
+
+.mobile-landscape		{
+	@extend %social;
+	@media screen and (min-height: 62rem)	{
+		display: none;
+	}
+}
