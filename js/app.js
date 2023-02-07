@@ -141,7 +141,15 @@ const hamMenu	= document.querySelector('.hamburger-menu'),
 	  offScreen	= document.querySelector('.off-screen-menu');
 
 hamMenu.addEventListener('click', () => {
-	hamMenu.classList.toggle('active');
+	const currentState = hamMenu.getAttribute('data-state')
+	if (!currentState || currentState === 'closed') {
+		hamMenu.setAttribute('data-state', "opened");
+		hamMenu.setAttribute('aria-expanded', "true");
+		offScreen.classList.toggle('active');
+		return
+	}
+	hamMenu.setAttribute('data-state', "closed");
+	hamMenu.setAttribute('aria-expanded', "false");
 	offScreen.classList.toggle('active');
 });
 

@@ -13,9 +13,9 @@
 	width: 2.75rem;
 	height: 2.75rem;
 	background-color: $color-pri;
-	opacity: 0.7;
-	padding: 1rem;
 	border-radius: 0.15rem;
+	border: 0;
+	opacity: 0.7;
 	transition: ease .3s;
 	&:hover,
 	&:focus	{
@@ -26,45 +26,25 @@
 	}
 }
 
-.ham-bar	{
-	width: 70%;
-	height: 0.25rem;
-	background-color: #fff;
-	border-radius: 1.5rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	transition: transform .6s, opacity .6s, top .6s;
+.hamburger 		{
+	stroke: $white;
+	fill: none;
+	transition: translate 0.6s;
 }
 
-.bar-top	{
-	top: 25%;
+.hamburger-menu[data-state="opened"] .hamburger		{
+	// translate: 10px -10px;
+	rotate: 0.125turn;
 }
 
-.bar-bottom	{
-	top: 75%;
+.hamburger-menu .line			{
+	transition: 0.6s;
+	stroke-dasharray: 60 31 60 1000;
 }
 
-.hamburger-menu.active	{
-	border: 0.1rem solid #000;
-	background-color: $color-pri;
-	opacity: 1;
-}
-
-.hamburger-menu.active .bar-top	{
-	transform: translate(-50%, -50%) rotate(-495deg);
-	top: 50%;
-}
-
-.hamburger-menu.active .bar-mid	{
-	transform: translate(-50%, -50%) rotate(180deg);
-	opacity: 0;
-}
-
-.hamburger-menu.active .bar-bottom	{
-	transform: translate(-50%, -50%) rotate(-405deg);
-	top: 50%;
+.hamburger-menu[data-state="opened"] .line			{
+	stroke-dasharray: 60 105 60 300;
+	stroke-dashoffset: -90;
 }
 
 // Contact Form
