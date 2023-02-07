@@ -145,12 +145,12 @@ hamMenu.addEventListener('click', () => {
 	if (!currentState || currentState === 'closed') {
 		hamMenu.setAttribute('data-state', "opened");
 		hamMenu.setAttribute('aria-expanded', "true");
-		offScreen.classList.toggle('active');
+		offScreen.classList.add('active');
 		return
 	}
 	hamMenu.setAttribute('data-state', "closed");
 	hamMenu.setAttribute('aria-expanded', "false");
-	offScreen.classList.toggle('active');
+	offScreen.classList.remove('active');
 });
 
 // Hide Menu On Link Click
@@ -158,6 +158,8 @@ hamMenu.addEventListener('click', () => {
 $(".logo-mobile-container a, nav a, .main").on("click", function() {
     $(".hamburger-menu").removeClass("active");
     $(".off-screen-menu").removeClass("active");
+    hamMenu.setAttribute('data-state', "closed");
+	hamMenu.setAttribute('aria-expanded', "false");
 });
 
 // Mobile Links Social Pop Up
