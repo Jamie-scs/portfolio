@@ -5,10 +5,10 @@
 .off-screen-menu		{
 	position: fixed;
 	top: 0;
-	left: -13rem;
+	left: -14rem;
 	z-index: 2;
 	height: 100%;
-	width: 13rem;
+	width: 14rem;
 	overflow-y: auto;
 	background: $white;
 	@include b-pri(right);
