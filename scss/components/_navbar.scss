@@ -27,6 +27,30 @@
 
 // Sidebar Navigation
 
+.sidebar  		{
+	height: 100%;
+	width: $sidebar;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: $white;
+	overflow-y: auto;
+	@include b-pri(right);
+	@include b-pri(left);
+	@media screen and (max-height: 62rem)	{
+		width: $sidebar * 2.5;
+		nav 		{
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.links-menu	{
+			width: 50%;
+			@include b-pri(left);
+		}
+	}
+}
+
 .logo-container		{
 	width: 100%;
 	height: 8rem;
@@ -34,10 +58,10 @@
 }
 
 .links				{
-	margin: 0 0.5rem 1rem;
+	margin: 1rem 0 0.5rem;
 	>:last-child		{
 		@include b-sec(top, bottom);
-		margin-bottom: 0.5rem;
+		margin: 1rem 0 0.5rem;
 	}
 	li 					{
 		margin: 0.5rem 0;
@@ -67,21 +91,22 @@
 	min-height: 3.75rem;
 	a span					{
 		font-size: 1.8rem;
+		line-height: 2rem;
 		background-color: $white;
-		padding: 1rem;
+		padding: 0.125rem 0.5rem;
 		border-radius: 50%;
 	}
 	&:first-child a > span			{
 		color: $facebook;
-		@include fancy-icon(2rem, $facebook);
+		@include fancy-icon(1.8rem, $facebook);
 	}
 	&:nth-child(2) a > span			{
 		color: $linkedin;
-		@include fancy-icon(2rem, $linkedin);
+		@include fancy-icon(1.8rem, $linkedin);
 	}
 	&:last-child a > span			{
 		color: $git;
-		@include fancy-icon(2rem, $git);
+		@include fancy-icon(1.8rem, $git);
 	}
 }
 
@@ -100,8 +125,4 @@
 	justify-content: space-evenly;
 	padding-bottom: 1rem;
 	margin: 0 0 1rem;
-}
-
-.stack-icn img			{
-	width: 2.5rem;
 }

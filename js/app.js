@@ -39,7 +39,7 @@ const errMsg	=
 	hasInvalid		: " contains invalid characters",
 	nameIsShort		: " is too short, min 2 characters",
 	telIsShort		: " is too short, min 11 digits",
-	telIsLong		: " is too long, max 14 digits",
+	telIsLong		: " is too long, max 11 digits",
 	subIsShort		: " is too short, min 4 characters",
 	msgIsShort		: " is too short, min 20 characters",
 	isLong			: " is too long, max 254 characters",
@@ -49,7 +49,7 @@ const errMsg	=
 
 const regExpTx	= new RegExp(/^[a-zA-Z ]*$/),
 	  regExpMsg	= new RegExp(/^[a-zA-Z\s]*$/),
-	  regExpTel	= new RegExp(/^[0-9 ]*$/),
+	  regExpTel	= new RegExp(/^[0-9]*$/),
 	  regExpEm	= new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
 let validate	= (id, index) => {
@@ -94,7 +94,7 @@ let validate	= (id, index) => {
 	    fail();
 	    return;
 	}
-	if (val.length > 14 && id === phone)	{
+	if (val.length > 11 && id === phone)	{
 		errorMsg[index].innerHTML = indexMsg[index] + errMsg.telIsLong;
 	    fail();
 	    return;
@@ -155,7 +155,7 @@ $(".logo-mobile-container a, nav a, .main").on("click", function() {
 // Page Transition
 
 $('.animsition').animsition({
-	inClass: 'flip-in-y',
+	inClass: 'fade-in-down-sm',
 	outClass: 'fade-out-up-lg',
 	inDuration: 1000,
 	outDuration: 750

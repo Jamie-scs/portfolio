@@ -2,29 +2,6 @@
 // Containers
 // ========================================
 
-.sidebar  		{
-	height: 100dvh;
-	width: $sidebar;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background: $white;
-	@include b-pri(right);
-	@include b-pri(left);
-	@media screen and (max-height: 62rem)	{
-		width: $sidebar * 2.5;
-		nav 		{
-			display: flex;
-			flex-direction: row-reverse;
-		}
-		.links-menu	{
-			width: 50%;
-			@include b-pri(left);
-		}
-	}
-}
-
 .main 				{
 	min-height: 100%;
 	@include mqm(large)	{

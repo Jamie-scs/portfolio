@@ -18,20 +18,14 @@
 	@extend %coding-container;
 }
 
-.screenshot			{
-	@extend %screenshot;
+.code-snippet			{
+	@extend %code-snippet;
 	@include mqm(large){
-		max-width: 80%;
 		margin-top: 1rem;
 	}
 }
 
-.screenshot img 	{
-	width: 100%;
-	@extend %screenshot-img;
-}
-
-.screenshot-info	{
+.code-snippet-info	{
 	padding: 1rem 1rem 0;
 	@include mqm(large){
 		width: 80%;
@@ -47,7 +41,7 @@
 	}
 }
 
-.content-container-half.screenshot-info	{
+.content-container-half.code-snippet-info	{
 	padding: 1rem 1rem 0;
 	@include mqm(small){
 		max-width: 39%;
@@ -61,8 +55,8 @@
 }
 
 
-.screenshot-half		{
-	@extend %screenshot;
+.code-snippet-half		{
+	@extend %code-snippet;
 	@include mqm(small)	{
 		min-width: 59%;
 		margin-top: 1rem;
@@ -76,7 +70,3 @@
 	}
 }
 
-.screenshot-half img 	{
-	width: 100%;
-	@extend %screenshot-img;
-}
