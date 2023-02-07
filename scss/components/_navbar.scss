@@ -38,17 +38,6 @@
 	overflow-y: auto;
 	@include b-pri(right);
 	@include b-pri(left);
-	@media screen and (max-height: 62rem)	{
-		width: $sidebar * 2.5;
-		nav 		{
-			display: flex;
-			flex-direction: row-reverse;
-		}
-		.links-menu	{
-			width: 50%;
-			@include b-pri(left);
-		}
-	}
 }
 
 .logo-container		{
@@ -57,21 +46,24 @@
 	@include b-pri(bottom);
 }
 
-.links				{
+.links					{
 	margin: 1rem 0 0.5rem;
-	>:last-child		{
+	>:nth-child(5)			{
 		@include b-sec(top, bottom);
 		margin: 1rem 0 0.5rem;
 	}
-	li 					{
+	li 						{
 		margin: 0.5rem 0;
 	}
 	li:nth-child(-n+4)>a	{
 		position: relative;
 		@include fancy-line;
 	}
-	a 					{
+	a 						{
 		@include fancy-text(1.2rem);
+	}
+	.social-link			{
+
 	}
 }
 
@@ -87,36 +79,36 @@
 }
 
 .social-icn				{
-	width: 4rem;
+	width: 100%;
 	min-height: 3.75rem;
 	a span					{
-		font-size: 1.8rem;
+		font-size: 2rem;
 		line-height: 2rem;
 		background-color: $white;
 		padding: 0.125rem 0.5rem;
 		border-radius: 50%;
 	}
-	&:first-child a > span			{
+	& .facebook > span			{
 		color: $facebook;
-		@include fancy-icon(1.8rem, $facebook);
+		@include fancy-icon(2rem, $facebook);
 	}
-	&:nth-child(2) a > span			{
+	& .linkedin > span			{
 		color: $linkedin;
-		@include fancy-icon(1.8rem, $linkedin);
+		@include fancy-icon(2rem, $linkedin);
 	}
-	&:last-child a > span			{
+	& .github > span			{
 		color: $git;
-		@include fancy-icon(1.8rem, $git);
+		@include fancy-icon(2rem, $git);
 	}
 }
 
 .icons-menu				{
 	width: 100%;
 	@media screen and (max-height: 62rem)	{
-		width: 50%;
-		@include mqx(small)						{
-			display: none;
-		}
+		display: none;
+	}
+	@include mqx(small)						{
+		display: none;
 	}
 }
 

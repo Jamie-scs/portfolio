@@ -6,9 +6,6 @@
 	min-height: 100%;
 	@include mqm(large)	{
 		margin-left: $sidebar;
-		@media screen and (max-height: 62rem)	{
-			margin-left: $sidebar * 2.5;
-		}
 	}
 }
 

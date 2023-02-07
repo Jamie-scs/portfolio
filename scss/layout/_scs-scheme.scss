@@ -57,10 +57,12 @@
 
 .logo1			{
 	grid-area: main-logo;
-	img 			{
-		width: 100%;
+	svg 			{
+		width: 4rem;
+		height: 4rem;	
 		@include mqm(large)	{
-			width: 80%;
+			width: 5rem;
+			height: 5rem;	
 			margin: 3rem 0 0 3rem;
 		}
 	}
@@ -68,11 +70,13 @@
 
 .logo2			{
 	grid-area: footer-logo;
-	img 			{
-		width: 45%;
+	svg 			{
+		width: 4rem;
+		height: 4rem;	
 		border-radius: 50%;
 		@include mqm(large)	{
-			width: 65%;
+			width: 5rem;
+			height: 5rem;	
 			margin: 3rem 3rem 0 0;
 		}
 	}

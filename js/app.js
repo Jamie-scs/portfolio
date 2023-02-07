@@ -152,6 +152,17 @@ $(".logo-mobile-container a, nav a, .main").on("click", function() {
     $(".off-screen-menu").removeClass("active");
 });
 
+// Mobile Links Social Pop Up
+
+const socialLink = document.querySelectorAll('.social-link'),
+	socialPopup = document.querySelectorAll('.social-popup');
+
+for (let i = 0; i < socialLink.length; i++) {
+	socialLink[i].addEventListener('click', () => {
+		socialPopup[i].classList.toggle('hidden');
+	})
+};
+
 // Page Transition
 
 $('.animsition').animsition({
